@@ -97,4 +97,6 @@ public/
 
 .DS_Store
 
+_site
+
 # End of https://www.gitignore.io/api/node
