@@ -1,0 +1,14 @@
+{
+  "title": "takanorip.com",
+  "url": "https://takanorip.com/",
+  "description": "frontend developer / interface designer",
+  "ogp": {
+    "og:image": "https://takanorip.com/img/og-image.png",
+    "twitter:card": "summary_large_image"
+  },
+  "author": {
+    "name": "takanorip"
+  },
+  "twitter": "https://twitter.com/takanoripe",
+  "github": "https://github.com/takanorip"
+}

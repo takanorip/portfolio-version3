@@ -3,8 +3,6 @@ title: Chie Hieida's WebSite
 date: "2018-01-06T23:46:37.121Z"
 cover: "./cover.jpg"
 category: "WebSite"
-path: "/works/chie-hieida"
-layout: layouts/base.njk
 ---
 
 ![キャプチャ1](./cover.jpg)

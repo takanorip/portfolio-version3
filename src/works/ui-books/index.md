@@ -3,8 +3,6 @@ title: エンジニアのためのUIデザインブックス
 date: "2018-10-08T22:00:32.169Z"
 cover: "./coverpic.jpg"
 category: "Book"
-path: "/works/ui-books/"
-layout: layouts/base.njk
 ---
 
 ![表紙](./coverpic.jpg)

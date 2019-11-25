@@ -3,8 +3,6 @@ title: "犬テトラ+"
 date: "2017-10-01T22:12:03.284Z"
 cover: "./cover.png"
 category: "WebSite"
-path: "/works/inutetraplus/"
-layout: layouts/base.njk
 ---
 
 ![キャプチャ1](./cover.png)

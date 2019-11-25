@@ -3,8 +3,6 @@ title: ポートフォリオサイトver.1
 date: "2017-05-28T22:40:32.169Z"
 cover: "./cover.png"
 category: "WebSite"
-path: "/works/portfolio-v1/"
-layout: layouts/base.njk
 ---
 
 ![表紙](./cover.png)

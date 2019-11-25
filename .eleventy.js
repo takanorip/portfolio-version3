@@ -1,10 +1,10 @@
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("works", "layouts/works.njk");
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("**/*.jpg");
-  eleventyConfig.addPassthroughCopy("**/*.png");
+  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/**/*.png");
 
   return {
     templateFormats: [

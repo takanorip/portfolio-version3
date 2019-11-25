@@ -3,8 +3,6 @@ title: "SmartDrive Cars"
 date: "2018-04-01T22:12:03.284Z"
 cover: "./cover.jpg"
 category: "WebSite"
-path: "/works/smartdrive-cars/"
-layout: layouts/base.njk
 ---
 
 ![キャプチャ1](./cover.jpg)

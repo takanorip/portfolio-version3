@@ -3,8 +3,6 @@ title: DriveOps
 date: "2017-08-28T22:40:32.169Z"
 cover: "./cover.png"
 category: "WebSite"
-path: "/works/driveops/"
-layout: layouts/base.njk
 ---
 
 ![キャプチャ](./cover.png)
