@@ -1,8 +1,9 @@
 ---
-title: イヌでもわかるWeb Components 改訂版
+title: Web Components Book
 date: "2018-10-08T22:40:32.169Z"
 cover: "./cover.jpg"
 category: "Book"
+layout: layouts/works.njk
 ---
 
 ![表紙](./cover.jpg)

@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+permalink: /works/
+templateClass: works-content
+title: WORKS
+---
+
+{% include "components/head.njk" %}
+
+<ul class="takanorip-works">
+{%- for work in collections.works -%}
+  <li class="takanorip-worksItem">
+    <a class="takanorip-worksLink" href="{{ work.url }}">{{ work.data.title }}</a>
+  </li>
+{%- endfor -%}
+</ul>

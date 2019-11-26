@@ -1,8 +1,9 @@
 ---
-title: ポートフォリオサイトver.1
+title: Portfolio ver.1.0
 date: "2017-05-28T22:40:32.169Z"
 cover: "./cover.png"
 category: "WebSite"
+layout: layouts/works.njk
 ---
 
 ![表紙](./cover.png)

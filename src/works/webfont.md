@@ -1,8 +1,9 @@
 ---
-title: 誰でも使える！ウェブフォント実践マニュアル
+title: Web Font Book
 date: "2018-04-28T22:40:32.169Z"
 cover: "./cover.jpg"
 category: "Book"
+layout: layouts/works.njk
 ---
 
 ![表紙](./cover.jpg)

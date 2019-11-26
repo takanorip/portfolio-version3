@@ -1,8 +1,9 @@
 ---
-title: Chie Hieida's WebSite
+title: Chie Hieida
 date: "2018-01-06T23:46:37.121Z"
 cover: "./cover.jpg"
 category: "WebSite"
+layout: layouts/works.njk
 ---
 
 ![キャプチャ1](./cover.jpg)

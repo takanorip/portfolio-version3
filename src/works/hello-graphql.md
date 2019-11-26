@@ -3,6 +3,7 @@ title: Hello, GraphQL for client-side!
 date: "2018-10-08T00:00:00.121Z"
 cover: "./cover.png"
 category: "Book"
+layout: layouts/works.njk
 ---
 
 ![キャプチャ1](./cover.png)

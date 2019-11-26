@@ -2,7 +2,7 @@
   --content-max-width: 960px;
   --content-width: calc(100% - 32px);
   --medium-font-family: "FuturaLTPro-Medium", "Hiragino Sans", sans-serif;
-  --bold-font-family: "FuturaLTPro-Bold", "Hiragino Sans", sans-serif;
+  --bold-font-family: "FuturaLTPro-Bold", "Shin Go Bold", "Hiragino Sans", sans-serif;
   --title-font-size: 96px;
   --h1-font-size: 42px;
   --h2-font-size: 25px;
@@ -26,7 +26,7 @@ body {
   box-sizing: border-box;
   color: #fff;
   background-color: #000;
-  font-family: var(--medium-font-family);
+  font-family: var(--bold-font-family);
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
@@ -35,10 +35,6 @@ h1, h2, h3, p, a, ul, li {
   color: #fff;
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3 {
-  font-family: var(--bold-font-family);
 }
 
 p {
@@ -52,10 +48,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.bold {
-  font-family: var(--bold-font-family);
 }
 
 .takanorip-header {
@@ -121,6 +113,47 @@ a {
   margin: 0 auto;
 }
 
+.takanorip-headSection {
+  padding: var(--spacing-13) 0 var(--spacing-8);
+}
+
+.takanorip-headTitle {
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+
+.about-content .takanorip-headTitle {
+  color: #2AF598;
+}
+
+.works-content .takanorip-headTitle {
+  color: #009EFD;
+}
+
+.takanorip-sectionTitle {
+  padding-bottom: var(--spacing-5);
+  font-size: var(--h1-font-size);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.takanorip-sectionTitle::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  margin-right: var(--spacing-3);
+  background: linear-gradient(45deg, #2AF598 0%, #009EFD 100%);
+}
+
+.about-content .takanorip-contents,
+.works-content .takanorip-contents {
+  padding-bottom: var(--spacing-21);
+}
+
+/* TOP */
+
 .takanorip-topHeadline {
   margin-top: var(--spacing-21);
   font-size: 64px;
@@ -144,23 +177,59 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.takanorip-headSection {
-  padding: var(--spacing-13) 0 var(--spacing-8);
+/* ABOUT */
+
+.takanorip-aboutSection:not(:last-child) {
+  margin-bottom: var(--spacing-13);
 }
 
-.takanorip-headTitle {
-  font-size: 64px;
-  letter-spacing: 2px;
+.takanorip-accountList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+  padding-top: var(--spacing-5);
 }
 
-.about-content .takanorip-headTitle {
-  color: #2AF598;
+.takanorip-accountItem {
+  margin: 12px;
 }
 
-.takanorip-sectionTitle {
-  padding-bottom: var(--spacing-3);
+.takanorip-accountLink {
+  border-bottom: 2px solid #fff;
+}
+
+.takanorip-skillList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.takanorip-skillItem {
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: 40px;
+  background-color: #fff;
+  color: #000;
+  margin: 4px;
+}
+
+/* WORKS */
+
+.takanorip-works {
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center; */
+}
+
+.takanorip-worksItem {
   font-size: var(--h1-font-size);
-  letter-spacing: 2px;
+}
+
+.takanorip-worksItem:not(:first-child) {
+  margin-top: var(--spacing-1);
+}
+
+.takanorip-worksLink {
+  padding: var(--spacing-1);
 }
 
 @media (max-width: 640px) {
@@ -170,7 +239,6 @@ a {
     left: 0;
     width: 100%;
     background-color: #000;
-    font-family: var(--bold-font-family);
   }
 
   .takanorip-headerList {
@@ -190,6 +258,16 @@ a {
     bottom: 20px;
   }
 
+  .takanorip-headSection {
+    padding: var(--spacing-5) 0 var(--spacing-8);
+  }
+
+  .takanorip-sectionTitle {
+    font-size: var(--h2-font-size);
+  }
+
+  /* TOP */
+
   .takanorip-topHeadline {
     font-size: 7.9vw;
     line-height: 1.8;
@@ -202,5 +280,11 @@ a {
   .takanorip-topTree {
     top: 160px;
     transform: translate(-50%, 0);
+  }
+
+  /* ABOUT */
+
+  .takanorip-accountItem {
+    width: 100%;
   }
 }
