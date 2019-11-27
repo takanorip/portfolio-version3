@@ -234,6 +234,20 @@ a {
   text-decoration: underline;
 }
 
+.takanorip-experience {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.takanorip-experienceTitle:not(:first-of-type) {
+  margin-top: var(--spacing-5);
+}
+
+.takanorip-experienceDescription {
+  margin-top: var(--spacing-1);
+  margin-left: var(--spacing-3);
+}
+
 .takanorip-skillList {
   display: flex;
   flex-wrap: wrap;
@@ -467,11 +481,6 @@ a {
 
   .takanorip-sectionTitle {
     font-size: var(--h2-font-size);
-  }
-
-  .takanorip-sectionTitle::before {
-    width: 12px;
-    margin-right: var(--spacing-1);
   }
 
   /* TOP */
