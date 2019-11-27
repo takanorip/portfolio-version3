@@ -11,7 +11,7 @@ technologies:
 layout: layouts/works.njk
 ---
 
-![表紙](./cover.png)
+![表紙](/img/portfolio-v1/cover.png)
 
 旧ポートフォリオサイトです。
 

@@ -8,7 +8,7 @@ technologies:
 layout: layouts/works.njk
 ---
 
-![表紙](./coverpic.jpg)
+![表紙](/img/ui-books/coverpic.jpg)
 
 「エンジニアのためのUIデザインブックス」という本を技術書典5で頒布しました。
 

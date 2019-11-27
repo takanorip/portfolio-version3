@@ -9,7 +9,7 @@ technologies:
 layout: layouts/works.njk
 ---
 
-![キャプチャ1](./cover.png)
+![キャプチャ1](/img/hello-graphql/cover.png)
 
 技術書典5で「Hello, GraphQL for client-side!」というタイトルの本を頒布しました。
 Nuxt.jsとApollo ClientでGraphQLをどう扱うかについて解説しています。

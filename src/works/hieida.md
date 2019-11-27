@@ -7,7 +7,7 @@ technologies: [ES2015+, stylus, EJS, npm scripts, particles.js]
 layout: layouts/works.njk
 ---
 
-![キャプチャ1](./cover.jpg)
+![キャプチャ1](/img/hieida/cover.jpg)
 
 高校時代の友人である日永田智絵さんの研究を紹介するウェブサイトを制作しました。
 

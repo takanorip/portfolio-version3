@@ -9,7 +9,7 @@ technologies:
 layout: layouts/works.njk
 ---
 
-![表紙](./cover.jpg)
+![表紙](/img/webcomponents/cover.jpg)
 
 技術書典3で頒布した「イヌでもわかるWeb Components」の改訂版を技術書典5で頒布しました。
 
