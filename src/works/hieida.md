@@ -2,7 +2,7 @@
 title: Chie Hieida
 date: "2018-01-06"
 category: "WebSite"
-projectUrl: "https://inutetraplus.netlify.com/"
+projectUrl: "https://www.hieida.com/"
 technologies: [ES2015+, stylus, EJS, npm scripts, particles.js]
 layout: layouts/works.njk
 ---

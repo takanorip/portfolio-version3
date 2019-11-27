@@ -6,6 +6,7 @@ projectUrl: "https://inutetraplus.netlify.com/"
 technologies:
   - Polymer3
   - bootstrap
+  - Netlify
 layout: layouts/works.njk
 ---
 

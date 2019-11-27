@@ -8,6 +8,7 @@ technologies:
   - SCSS
   - jQuery
   - Gulp
+  - Netlify
 layout: layouts/works.njk
 ---
 

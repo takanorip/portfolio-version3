@@ -5,6 +5,7 @@ category: "Book"
 projectUrl: "https://inutetraplus.booth.pm/items/1045830"
 technologies:
   - GraphQL
+  - Apollo Client
   - Nuxt.js
 layout: layouts/works.njk
 ---
