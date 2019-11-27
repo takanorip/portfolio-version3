@@ -10,5 +10,4 @@ layout: layouts/works.njk
 
 ![表紙](/img/ui-books/coverpic.jpg)
 
-「エンジニアのためのUIデザインブックス」という本を技術書典5で頒布しました。
-
+I published a co-authored book titled "UI design books for Engineers". It was distributed at Techbookfest 5.  

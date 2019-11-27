@@ -11,5 +11,5 @@ layout: layouts/works.njk
 
 ![キャプチャ1](/img/hello-graphql/cover.png)
 
-技術書典5で「Hello, GraphQL for client-side!」というタイトルの本を頒布しました。
-Nuxt.jsとApollo ClientでGraphQLをどう扱うかについて解説しています。
+I authored a book titled "Hello, GraphQL for client-side!". It was distributed at Techbookfest 5.  
+It explains how to use GraphQL API with Nuxt.js and Apollo Client.

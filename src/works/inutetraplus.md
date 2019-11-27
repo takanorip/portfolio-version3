@@ -15,4 +15,4 @@ layout: layouts/works.njk
 
 ![キャプチャ3](/img/inutetraplus/cover3.jpg)
 
-僕が所属している「犬テトラ+」という技術同人サークルのウェブサイトを開発しました。
+I created a website for a technical doujin circle called "Inutetraplus" that I belong to.

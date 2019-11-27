@@ -9,6 +9,5 @@ layout: layouts/works.njk
 
 ![キャプチャ1](/img/hieida/cover.jpg)
 
-高校時代の友人である日永田智絵さんの研究を紹介するウェブサイトを制作しました。
-
-デザインは[atsucoさん](https://twitter.com/atsuco_02)に担当してもらいました。
+I created a website for introducing the research of Chie Hieida who is my high school friend.  
+It was designed by [atsuco](https://twitter.com/atsuco_02).

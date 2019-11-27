@@ -13,8 +13,5 @@ layout: layouts/works.njk
 
 ![表紙](/img/portfolio-v1/cover.png)
 
-旧ポートフォリオサイトです。
-
-GitHubで見つけたテンプレートを改変して作りました。
-
-名字が「大木」なので、木のイラストをTOPに入れています。
+This is my old portfolio site.  
+It is made with a website template that I found on GitHub.

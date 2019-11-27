@@ -2,15 +2,13 @@
 title: Web Components Book
 date: "2018-10-08"
 category: "Book"
-projectUrl: "https://inutetraplus.booth.pm/items/1041988"
+projectUrl: "https://www.amazon.co.jp/dp/4844378414/ref=cm_sw_em_r_mt_dp_U_7yQ3DbB15RV6G"
 technologies:
   - Web Components
   - Polymer 3.0
 layout: layouts/works.njk
 ---
 
-![表紙](/img/webcomponents/cover.jpg)
+![表紙](/img/webcomponents/cover.png)
 
-技術書典3で頒布した「イヌでもわかるWeb Components」の改訂版を技術書典5で頒布しました。
-
-技術同人サークル「犬テトラ+」の3人で執筆し、僕は第3章でPolymer3.0の解説を担当しました。
+I published a co-authored book about Web Components.
