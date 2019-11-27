@@ -1,20 +1,18 @@
 ---
 title: "Inutetraplus"
-date: "2017-10-01T22:12:03.284Z"
-cover: "./cover.png"
+date: "2018-10-08"
 category: "WebSite"
+projectUrl: "https://inutetraplus.netlify.com/"
+technologies:
+  - Polymer3
+  - bootstrap
 layout: layouts/works.njk
 ---
 
-![キャプチャ1](./cover.png)
+![キャプチャ1](/img/inutetraplus/cover.png)
 
-![キャプチャ2](./cover2.jpg)
+![キャプチャ2](/img/inutetraplus/cover2.jpg)
 
-![キャプチャ3](./cover3.jpg)
+![キャプチャ3](/img/inutetraplus/cover3.jpg)
 
 僕が所属している「犬テトラ+」という技術同人サークルのウェブサイトを開発しました。
-
-#### 使用技術
-Polymer3, bootstrap
-
-[View Project](https://inutetraplus.netlify.com/)

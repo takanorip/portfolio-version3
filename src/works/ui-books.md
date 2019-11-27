@@ -1,8 +1,10 @@
 ---
 title: UI Design Books for Engineers
-date: "2018-10-08T22:00:32.169Z"
-cover: "./coverpic.jpg"
+date: "2018-10-08"
 category: "Book"
+projectUrl: "https://inutetraplus.booth.pm/items/1043041"
+technologies:
+  - UI Design
 layout: layouts/works.njk
 ---
 
@@ -10,4 +12,3 @@ layout: layouts/works.njk
 
 「エンジニアのためのUIデザインブックス」という本を技術書典5で頒布しました。
 
-[View Project](https://inutetraplus.booth.pm/items/1043041)
