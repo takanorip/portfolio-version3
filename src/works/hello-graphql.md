@@ -1,7 +1,8 @@
 ---
 title: Hello, GraphQL for client-side!
 date: "2018-10-08"
-category: "Book"
+category: 
+  - Book
 projectUrl: "https://inutetraplus.booth.pm/items/1045830"
 technologies:
   - GraphQL

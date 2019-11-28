@@ -9,7 +9,11 @@ templateClass: works-content
 <div class="takanorip-workInfo">
   <div class="takanorip-workCategory">
     <p class="takanorip-workCategoryTitle">Category:</p>
-    <p class="takanorip-workCategoryItem">{{ category }}</p>
+    <ul class="takanorip-workTechsList">
+    {%- for c in category -%}
+      <li class="takanorip-workTechsItem">{{ c }}</li>
+    {%- endfor -%}
+    </ul>
   </div>
   <div class="takanorip-workTechs">
     <p class="takanorip-workTechsTitle">Technologies:</p>

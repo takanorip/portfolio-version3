@@ -1,7 +1,8 @@
 ---
 title: Portfolio ver.2.0
 date: "2018-07-01"
-category: "WebSite"
+category:
+  - WebSite
 projectUrl: "https://takanorip-next.netlify.com/"
 technologies:
   - Gatsby.js

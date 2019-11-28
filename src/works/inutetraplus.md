@@ -1,7 +1,8 @@
 ---
 title: "Inutetraplus"
 date: "2018-10-08"
-category: "WebSite"
+category:
+  - WebSite
 projectUrl: "https://inutetraplus.netlify.com/"
 technologies:
   - Polymer3

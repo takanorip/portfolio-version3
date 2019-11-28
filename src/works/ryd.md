@@ -1,7 +1,9 @@
 ---
 title: read_your_document.JS
 date: "2019-01-01"
-category: "WebSite"
+category:
+  - WebSite
+  - Book
 projectUrl: "https://ryd-js.com/"
 technologies:
   - Gatsby.js

@@ -1,7 +1,8 @@
 ---
 title: UI Design Books for Engineers
 date: "2018-10-08"
-category: "Book"
+category:
+  - Book
 projectUrl: "https://inutetraplus.booth.pm/items/1043041"
 technologies:
   - UI Design

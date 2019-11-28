@@ -292,7 +292,6 @@ a {
   top: -8px;
   bottom: -8px;
   right: -8px;
-  z-index: -1;
   background-color: #fff;
   transition: all 0.4s var(--ease-out-expo);
 }

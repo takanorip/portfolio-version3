@@ -1,7 +1,8 @@
 ---
 title: Portfolio ver.1.0
 date: "2017-05-28"
-category: "WebSite"
+category:
+  - WebSite
 projectUrl: "https://takanorip-portfolio.netlify.com/"
 technologies:
   - HTML
