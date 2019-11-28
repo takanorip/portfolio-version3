@@ -193,6 +193,7 @@ a {
   padding: 12px var(--spacing-1);
   color: #000;
   background-color: #fff;
+  letter-spacing: 0;
 }
 
 .takanorip-topTree {
