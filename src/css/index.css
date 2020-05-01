@@ -241,7 +241,7 @@ a {
 }
 
 .takanorip-experienceTitle:not(:first-of-type) {
-  margin-top: var(--spacing-5);
+  margin-top: var(--spacing-3);
 }
 
 .takanorip-experienceDescription {
