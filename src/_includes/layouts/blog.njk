@@ -1,21 +1,20 @@
 ---
-layout: layouts/base.njk
-templateClass: works-content
+layout: layouts/blogBase.njk
+templateClass: blog-content
 ---
-{% include "components/background.njk" %}
-<section class="takanorip-workHead">
-  <h2 class="takanorip-workTitle">{{ title }}</h2>
+<section class="takanorip-blogHead">
+  <h2 class="takanorip-blogTitle">{{ title }}</h2>
 </section>
-<div class="takanorip-workInfo">
-  <div class="takanorip-workCategory">
-    <p class="takanorip-workCategoryTitle">Category:</p>
-    <ul class="takanorip-workTechsList">
+<div class="takanorip-blogInfo">
+  <div class="takanorip-blogCategory">
+    <p class="takanorip-blogCategoryTitle">Category:</p>
+    <ul class="takanorip-blogTechsList">
     {%- for c in category -%}
-      <li class="takanorip-workTechsItem">{{ c }}</li>
+      <li class="takanorip-blogTechsItem">{{ c }}</li>
     {%- endfor -%}
     </ul>
   </div>
 </div>
-<div class="takanorip-work">
+<div class="takanorip-blogBoby">
   {{ content | safe }}
 </div>

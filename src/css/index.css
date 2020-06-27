@@ -443,6 +443,10 @@ a {
   font-family: var(--medium-font-family);
 }
 
+.takanorip-blogBoby {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 @media (max-width: 640px) {
   .takanorip-nav {
     position: fixed;
