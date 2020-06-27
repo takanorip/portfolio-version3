@@ -17,6 +17,8 @@
   --spacing-13: 104px;
   --spacing-21: 168px;
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --color-primary1: #009EFD;
+  --color-primary2: #2AF598;
 }
 
 html, body {
@@ -95,7 +97,7 @@ a {
   position: absolute;
   bottom: 12px;
   left: 0;
-  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  background: linear-gradient(90deg, var(--color-primary2) 0%, var(--color-primary1) 100%);
   transform: scaleX(0);
   transform-origin: center left;
   transition: transform 0.4s var(--ease-out-expo);
@@ -123,11 +125,11 @@ a {
 }
 
 .about-content .takanorip-headTitle {
-  color: #2AF598;
+  color: var(--color-primary2);
 }
 
 .works-content .takanorip-headTitle {
-  color: #009EFD;
+  color: var(--color-primary1);
 }
 
 .takanorip-sectionTitle {
@@ -360,7 +362,7 @@ a {
   line-height: 1;
   font-family: var(--medium-font-family);
   padding: 6px 8px;
-  background-color: #009EFD;
+  background-color: var(--color-primary1);
   color: #000;
 }
 
@@ -386,7 +388,7 @@ a {
   margin: 4px;
   padding: 6px 8px;
   line-height: 1;
-  background-color: #009EFD;
+  background-color: var(--color-primary1);
   color: #000;
 }
 

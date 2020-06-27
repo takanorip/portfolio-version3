@@ -3,6 +3,9 @@ title: "Init"
 date: "2018-10-08"
 category: 
   - CSS
+tags:
+  - blog
+  - web
 layout: layouts/blog.njk
 ---
 

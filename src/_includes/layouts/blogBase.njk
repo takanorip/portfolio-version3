@@ -31,22 +31,16 @@
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism.css' | url }}">
   </head>
-  <body {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+  <body {% if templateClass %} class="{{ templateClass }} takanorip-blogBase"{% endif %}>
     <header class="takanorip-header">
-      <h1 class="takanorip-headerLogo"><a class="takanorip-headerLogoLink" href="{{ '/' | url }}">takanorip</a></h1>
+      <h1 class="takanorip-headerLogo"><a class="takanorip-headerLogoLink" href="{{ '/blog' | url }}">takanorip blog</a></h1>
       <nav class="takanorip-nav">
         <ul class="takanorip-headerList">
             <li class="takanorip-headerItem">
-              <a class="takanorip-headerLink top" href="{{ '/' | url }}">top</a>
+              <a class="takanorip-headerLink" href="{{ '/' | url }}">portfolio</a>
             </li>
             <li class="takanorip-headerItem">
-              <a class="takanorip-headerLink works" href="{{ '/works' | url }}">works</a>
-            </li>
-            <li class="takanorip-headerItem">
-              <a class="takanorip-headerLink about" href="{{ '/about' | url }}">about</a>
-            </li>
-            <li class="takanorip-headerItem">
-              <a class="takanorip-headerLink blog" href="{{ '/blog' | url }}">blog</a>
+              <a class="takanorip-headerLink" href="{{ '/feed.xml' | url }}">rss</a>
             </li>
           </ul>
       </nav>

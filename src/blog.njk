@@ -1,20 +1,18 @@
 ---
-layout: layouts/base.njk
+layout: layouts/blogBase.njk
 permalink: /blog/
 templateClass: blog-list-content
 title: BLOG
 ---
-{% include "components/background.njk" %}
 {% include "components/head.njk" %}
 
 <ul class="takanorip-blogList">
 {%- for blog in collections.blog | reverse -%}
   <li class="takanorip-blogListItem">
     <a class="takanorip-blogListLink" href="{{ blog.url }}">
-      <div class="takanorip-blogListLinkWrap">
+      <p class="takanorip-blogListLinkWrap">
           {{ blog.data.title }}
-          <svg class="takanorip-blogListLinkIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
-      </div>
+      </p>
     </a>
   </li>
 {%- endfor -%}
