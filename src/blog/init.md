@@ -1,8 +1,8 @@
 ---
 title: "Init"
 date: "2018-10-08"
-tags:
-  - init
+category: 
+  - CSS
 layout: layouts/blog.njk
 ---
 
