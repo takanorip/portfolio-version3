@@ -1,23 +1,24 @@
 ---
-title: "Init"
-date: "2018-10-08"
-category: 
-  - CSS
+title: "こんにちはInit"
+created_at: "2018-10-08"
 tags:
   - blog
   - web
 layout: layouts/blog.njk
 ---
 
+**TOC**
 [[toc]]
 
-I authored a book titled "Hello, GraphQL for client-side!". It was distributed at Techbookfest 5.  
-It explains how to use GraphQL API with Nuxt.js and Apollo Client.
+こんにちは。Hello.
 
-## Good
+- Blog
+- 作りました
+
+## Sample
 
 ``` js
-function myFunction() {
+function takanoripFunction() {
   return true;
 }
 ```

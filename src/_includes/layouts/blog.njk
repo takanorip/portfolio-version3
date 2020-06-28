@@ -6,11 +6,24 @@ templateClass: blog-content
   <h2 class="takanorip-blogTitle">{{ title }}</h2>
 </section>
 <div class="takanorip-blogInfo">
-  <div class="takanorip-blogCategory">
-    <p class="takanorip-blogCategoryTitle">Category:</p>
-    <ul class="takanorip-blogTechsList">
-    {%- for c in category -%}
-      <li class="takanorip-blogTechsItem">{{ c }}</li>
+  {% if updated_at %}
+  <div class="takanorip-blogDate">
+    <p class="takanorip-blogCategoryTitle">Updated at: </p>
+    <p class="takanorip-blogCategoryTitle">{{ updated_at }}</p>
+  </div>
+  {% endif %}
+  <div class="takanorip-blogDate">
+    <p class="takanorip-blogCategoryTitle">Created at: </p>
+    <p class="takanorip-blogCategoryTitle">{{ created_at }}</p>
+  </div>
+  <div class="takanorip-blogTag">
+    <p class="takanorip-blogTagTitle">tags:</p>
+    <ul class="takanorip-blogTagList">
+    {%- for t in tags -%}
+      {% set isNotBlog = t !== 'blog' %}
+      {% if isNotBlog %}
+      <li class="takanorip-blogTagItem">{{ t }}</li>
+      {% endif %}
     {%- endfor -%}
     </ul>
   </div>
@@ -18,3 +31,10 @@ templateClass: blog-content
 <div class="takanorip-blogBoby">
   {{ content | safe }}
 </div>
+<footer class="takanorip-blogFooter">
+  <div class="takanorip-blogFooterContents">
+    <p class="takanorip-blogFooterName">takanorip</p>
+    <a href="">Twitter</a>
+  </div>
+  <p><a href="#top">先頭に戻る</a></p>
+</footer>
