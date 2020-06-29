@@ -4,6 +4,7 @@
   --medium-font-family: "FuturaLTPro-Heavy", "Hiragino Sans", sans-serif;
   --bold-font-family: "FuturaLTPro-Bold", 'Overpass', 'Noto Sans JP', "Hiragino Sans", sans-serif;
   --blog-font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  --code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --title-font-size: 96px;
   --h1-font-size: 42px;
   --h2-font-size: 25px;
@@ -20,6 +21,8 @@
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
   --color-primary1: #009EFD;
   --color-primary2: #2AF598;
+  --color-blog-black: #161016;
+  --color-blog-gray: #e6ece6;
 }
 
 html, body {
@@ -43,8 +46,8 @@ body {
 .takanorip-blogBase a,
 .takanorip-blogBase ul,
 .takanorip-blogBase li {
-  color: #161016;
-  background-color: #e6ece6;
+  color: var(--color-blog-black);
+  background-color: var(--color-blog-gray);
   letter-spacing: 0;
 }
 
@@ -65,6 +68,15 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+code {
+  font-family: var(--code-font-family);
+  background-color: var(--color-blog-black);
+  color: var(--color-blog-gray);
+  padding: 2px 6px;
+  margin: 0 4px;
+  border-radius: 2px;
 }
 
 .takanorip-header {
@@ -142,6 +154,11 @@ a {
 
 .takanorip-blogBoby ul {
   margin-left: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+}
+
+.takanorip-blogBoby li {
+  line-height: 1.7;
 }
 
 .takanorip-blogBoby li::before {
@@ -530,7 +547,6 @@ a {
 
 .takanorip-blogBoby p {
   margin-bottom: var(--spacing-2);
-  line-height: 1.5;
 }
 
 .takanorip-blogBoby h2,

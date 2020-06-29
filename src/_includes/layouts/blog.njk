@@ -22,7 +22,7 @@ templateClass: blog-content
     {%- for t in tags -%}
       {% set isNotBlog = t !== 'blog' %}
       {% if isNotBlog %}
-      <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/{{ t }}/">{{ t }}</a></li>
+      <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/tags/{{ t }}/">{{ t }}</a></li>
       {% endif %}
     {%- endfor -%}
     </ul>
@@ -32,10 +32,10 @@ templateClass: blog-content
   {{ content | safe }}
 </div>
 <div class="takanorip-twitter">
-  {% set tweetText = title + ' - takanorip blog https://takanorip.com/' + page.url | escape %}
+  {% set tweetText = title + ' - takanorip blog https://takanorip.com' + page.url %}
   <a
     class="takanorip-twitterLink"
-    href="https://twitter.com/intent/tweet?text={{ tweetText }}"
+    href="https://twitter.com/intent/tweet?text={{ tweetText | urlencode }}"
     data-size="large"
     rel="noopener noreferrer"
     target="_blank"

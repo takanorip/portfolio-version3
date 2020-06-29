@@ -15,6 +15,9 @@ layout: layouts/blog.njk
 
 - Blog
 - 作りました
+  - code
+
+これは`code`です
 
 ## Sample
 
