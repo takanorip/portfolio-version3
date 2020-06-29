@@ -4,6 +4,7 @@ created_at: "2018-10-08"
 tags:
   - blog
   - web
+  - Foo
 layout: layouts/blog.njk
 ---
 

@@ -8,13 +8,13 @@ templateClass: blog-content
 <div class="takanorip-blogInfo">
   {% if updated_at %}
   <div class="takanorip-blogDate">
-    <p class="takanorip-blogCategoryTitle">Updated at: </p>
-    <p class="takanorip-blogCategoryTitle">{{ updated_at }}</p>
+    <p class="takanorip-blogDateTitle">updated at:</p>
+    <p class="takanorip-blogDateDate">{{ updated_at }}</p>
   </div>
   {% endif %}
   <div class="takanorip-blogDate">
-    <p class="takanorip-blogCategoryTitle">Created at: </p>
-    <p class="takanorip-blogCategoryTitle">{{ created_at }}</p>
+    <p class="takanorip-blogDateTitle">created at:</p>
+    <p class="takanorip-blogDateDate">{{ created_at }}</p>
   </div>
   <div class="takanorip-blogTag">
     <p class="takanorip-blogTagTitle">tags:</p>
@@ -22,7 +22,7 @@ templateClass: blog-content
     {%- for t in tags -%}
       {% set isNotBlog = t !== 'blog' %}
       {% if isNotBlog %}
-      <li class="takanorip-blogTagItem">{{ t }}</li>
+      <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/{{ t }}/">{{ t }}</a></li>
       {% endif %}
     {%- endfor -%}
     </ul>
@@ -31,10 +31,22 @@ templateClass: blog-content
 <div class="takanorip-blogBoby">
   {{ content | safe }}
 </div>
+<div class="takanorip-twitter">
+  {% set tweetText = title + ' - takanorip blog https://takanorip.com/' + page.url | escape %}
+  <a
+    class="takanorip-twitterLink"
+    href="https://twitter.com/intent/tweet?text={{ tweetText }}"
+    data-size="large"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Share on Twitter
+  </a>
+</div>
 <footer class="takanorip-blogFooter">
   <div class="takanorip-blogFooterContents">
     <p class="takanorip-blogFooterName">takanorip</p>
-    <a href="">Twitter</a>
+    <a href="https://takanorip.com/">Twitter</a>
   </div>
   <p><a href="#top">先頭に戻る</a></p>
 </footer>

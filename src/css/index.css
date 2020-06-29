@@ -140,12 +140,13 @@ a {
   text-decoration: underline;
 }
 
-.takanorip-blogBase .takanorip-contents ul {
+.takanorip-blogBoby ul {
   margin-left: var(--spacing-2);
 }
 
-.takanorip-blogBase .takanorip-contents li::before {
-  content: '- ';
+.takanorip-blogBoby li::before {
+  content: '-';
+  margin-right: var(--spacing-1);
 }
 
 .takanorip-headSection {
@@ -492,16 +493,33 @@ a {
   margin-bottom: var(--spacing-3);
 }
 
+.takanorip-blogTagTitle {
+  font-weight: bold;
+}
+
 .takanorip-blogTag {
   display: flex;
 }
 
 .takanorip-blogTagList {
   display: flex;
+  list-style: none;
+  margin-left: var(--spacing-1);
+}
+
+.takanorip-blogTagItem:nth-child(n+2)::before {
+  content: ',';
+  padding-right: var(--spacing-1);
 }
 
 .takanorip-blogDate {
   display: flex;
+  margin-right: var(--spacing-2);
+}
+
+.takanorip-blogDateTitle {
+  font-weight: bold;
+  margin-right: var(--spacing-1);
 }
 
 .takanorip-blogHead,
@@ -542,6 +560,10 @@ a {
   margin-right: var(--spacing-2);
 }
 
+.takanorip-twitter {
+  margin-top: var(--spacing-8);
+}
+
 @media (max-width: 640px) {
   .takanorip-nav {
     position: fixed;
@@ -549,6 +571,15 @@ a {
     left: 0;
     width: 100%;
     background-color: #000;
+  }
+
+  .takanorip-blogBase .takanorip-nav {
+    position: static;
+    width: auto;
+  }
+
+  .takanorip-blogBase .takanorip-contents {
+    padding-top: var(--spacing-3);
   }
 
   .takanorip-headerLogoLink {
