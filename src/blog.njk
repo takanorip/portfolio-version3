@@ -1,0 +1,26 @@
+---
+layout: layouts/blogBase.njk
+permalink: /blog/
+templateClass: blog-list-content
+title: BLOG
+---
+
+<ul class="takanorip-blogList">
+{%- for blog in collections.blog | reverse -%}
+  <li class="takanorip-blogListItem">
+    <a class="takanorip-blogListLink" href="{{ blog.url }}">
+      {{ blog.data.title }}
+    </a>
+    <div class="takanorip-blogListInfo">
+      <p class="takanorip-blogListDate">{{ blog.data.created_at }}</p>
+      <ul class="takanorip-blogTagList">
+        {%- for t in blog.data.tags -%}
+        {% if t !== 'blog' %}
+        <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/tags/{{ t }}/">{{ t }}</a></li>
+        {% endif %}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </li>
+{%- endfor -%}
+</ul>

@@ -1,0 +1,45 @@
+---
+layout: layouts/blogBase.njk
+templateClass: blog-content
+---
+<section class="takanorip-blogHead">
+  <h2 class="takanorip-blogTitle">{{ title }}</h2>
+</section>
+<div class="takanorip-blogInfo">
+  {% if updated_at %}
+  <div class="takanorip-blogDate">
+    <p class="takanorip-blogDateTitle">updated at:</p>
+    <p class="takanorip-blogDateDate">{{ updated_at }}</p>
+  </div>
+  {% endif %}
+  <div class="takanorip-blogDate">
+    <p class="takanorip-blogDateTitle">created at:</p>
+    <p class="takanorip-blogDateDate">{{ created_at }}</p>
+  </div>
+  <div class="takanorip-blogTag">
+    <p class="takanorip-blogTagTitle">tags:</p>
+    <ul class="takanorip-blogTagList">
+    {%- for t in tags -%}
+      {% set isNotBlog = t !== 'blog' %}
+      {% if isNotBlog %}
+      <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/tags/{{ t }}/">{{ t }}</a></li>
+      {% endif %}
+    {%- endfor -%}
+    </ul>
+  </div>
+</div>
+<div class="takanorip-blogBoby">
+  {{ content | safe }}
+</div>
+<div class="takanorip-twitter">
+  {% set tweetText = title + ' - takanorip blog https://takanorip.com' + page.url %}
+  <a
+    class="takanorip-twitterLink"
+    href="https://twitter.com/intent/tweet?text={{ tweetText | urlencode }}"
+    data-size="large"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Share on Twitter
+  </a>
+</div>

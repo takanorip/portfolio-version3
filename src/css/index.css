@@ -2,7 +2,9 @@
   --content-max-width: 960px;
   --content-width: calc(100% - 32px);
   --medium-font-family: "FuturaLTPro-Heavy", "Hiragino Sans", sans-serif;
-  --bold-font-family: "FuturaLTPro-Bold", "Hiragino Sans", sans-serif;
+  --bold-font-family: "FuturaLTPro-Bold", 'Overpass', 'Noto Sans JP', "Hiragino Sans", sans-serif;
+  --blog-font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  --code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --title-font-size: 96px;
   --h1-font-size: 42px;
   --h2-font-size: 25px;
@@ -17,6 +19,10 @@
   --spacing-13: 104px;
   --spacing-21: 168px;
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --color-primary1: #009EFD;
+  --color-primary2: #2AF598;
+  --color-blog-black: #161016;
+  --color-blog-gray: #e6ece6;
 }
 
 html, body {
@@ -30,6 +36,19 @@ body {
   font-family: var(--bold-font-family);
   -webkit-font-smoothing: antialiased;
   margin: 0;
+}
+
+.takanorip-blogBase,
+.takanorip-blogBase h1,
+.takanorip-blogBase h2,
+.takanorip-blogBase h3,
+.takanorip-blogBase p,
+.takanorip-blogBase a,
+.takanorip-blogBase ul,
+.takanorip-blogBase li {
+  color: var(--color-blog-black);
+  background-color: var(--color-blog-gray);
+  letter-spacing: 0;
 }
 
 h1, h2, h3, p, a, ul, li {
@@ -49,6 +68,15 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+code {
+  font-family: var(--code-font-family);
+  background-color: var(--color-blog-black);
+  color: var(--color-blog-gray);
+  padding: 2px 6px;
+  margin: 0 4px;
+  border-radius: 2px;
 }
 
 .takanorip-header {
@@ -86,6 +114,7 @@ a {
   display: block;
   padding: var(--spacing-2) 0;
   position: relative;
+  font-weight: bold;
 }
 
 .takanorip-headerLink::after {
@@ -95,7 +124,7 @@ a {
   position: absolute;
   bottom: 12px;
   left: 0;
-  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  background: linear-gradient(90deg, var(--color-primary2) 0%, var(--color-primary1) 100%);
   transform: scaleX(0);
   transform-origin: center left;
   transition: transform 0.4s var(--ease-out-expo);
@@ -114,6 +143,29 @@ a {
   margin: 0 auto;
 }
 
+.takanorip-blogBase .takanorip-contents {
+  padding-top: var(--spacing-8);
+  padding-bottom: var(--spacing-13);
+}
+
+.takanorip-blogBase .takanorip-contents a {
+  text-decoration: underline;
+}
+
+.takanorip-blogBoby ul {
+  margin-left: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+}
+
+.takanorip-blogBoby li {
+  line-height: 1.7;
+}
+
+.takanorip-blogBoby li::before {
+  content: '-';
+  margin-right: var(--spacing-1);
+}
+
 .takanorip-headSection {
   padding: var(--spacing-13) 0 var(--spacing-8);
 }
@@ -123,11 +175,11 @@ a {
 }
 
 .about-content .takanorip-headTitle {
-  color: #2AF598;
+  color: var(--color-primary2);
 }
 
 .works-content .takanorip-headTitle {
-  color: #009EFD;
+  color: var(--color-primary1);
 }
 
 .takanorip-sectionTitle {
@@ -360,7 +412,7 @@ a {
   line-height: 1;
   font-family: var(--medium-font-family);
   padding: 6px 8px;
-  background-color: #009EFD;
+  background-color: var(--color-primary1);
   color: #000;
 }
 
@@ -386,7 +438,7 @@ a {
   margin: 4px;
   padding: 6px 8px;
   line-height: 1;
-  background-color: #009EFD;
+  background-color: var(--color-primary1);
   color: #000;
 }
 
@@ -441,6 +493,127 @@ a {
   font-family: var(--medium-font-family);
 }
 
+.table-of-contents {
+  margin-bottom: var(--spacing-5);
+}
+
+.takanorip-blogTagList::before {
+  content: '[';
+}
+
+.takanorip-blogTagList::after {
+  content: ']';
+}
+
+.takanorip-blogListItem:nth-child(n+2) {
+  margin-top: var(--spacing-3);
+}
+
+.takanorip-blogListInfo {
+  display: flex;
+}
+
+.takanorip-blogListLink {
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--spacing-1);
+}
+
+.takanorip-blogTagsTitle {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--spacing-5);
+}
+
+.takanorip-blogTitle {
+  font-size: var(--h1-font-size);
+}
+
+.takanorip-blogHead {
+  margin-bottom: var(--spacing-5);
+}
+
+.takanorip-blogInfo {
+  display: flex;
+  margin-bottom: var(--spacing-3);
+}
+
+.takanorip-blogTagTitle {
+  font-weight: bold;
+}
+
+.takanorip-blogTag {
+  display: flex;
+}
+
+.takanorip-blogTagList {
+  display: flex;
+  list-style: none;
+  margin-left: var(--spacing-1);
+}
+
+.takanorip-blogTagItem:nth-child(n+2)::before {
+  content: ',';
+  padding-right: var(--spacing-1);
+}
+
+.takanorip-blogDate {
+  display: flex;
+  margin-right: var(--spacing-2);
+}
+
+.takanorip-blogDateTitle {
+  font-weight: bold;
+  margin-right: var(--spacing-1);
+}
+
+.takanorip-contents {
+  font-family: var(--blog-font-family);
+}
+
+.takanorip-blogBoby p {
+  margin-bottom: var(--spacing-2);
+}
+
+.takanorip-blogBoby h2,
+.takanorip-blogBoby h3 {
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-3);
+}
+
+.takanorip-blogBoby h2 {
+  font-size: var(--h2-font-size);
+}
+
+.takanorip-blogBoby h3 {
+  font-size: var(--h3-font-size);
+}
+
+.takanorip-blogFooter {
+  width: var(--content-width);
+  max-width: var(--content-max-width);
+  margin: 0 auto var(--spacing-13);
+}
+
+.takanorip-blogFooter a {
+  text-decoration: underline;
+}
+
+.takanorip-blogFooterContents {
+  display: flex;
+}
+
+.takanorip-blogFooterTop {
+  margin-top: var(--spacing-2);
+}
+
+.takanorip-blogFooterName {
+  margin-right: var(--spacing-2);
+}
+
+.takanorip-twitter {
+  margin-top: var(--spacing-8);
+}
+
 @media (max-width: 640px) {
   .takanorip-nav {
     position: fixed;
@@ -448,6 +621,15 @@ a {
     left: 0;
     width: 100%;
     background-color: #000;
+  }
+
+  .takanorip-blogBase .takanorip-nav {
+    position: static;
+    width: auto;
+  }
+
+  .takanorip-blogBase .takanorip-contents {
+    padding-top: var(--spacing-3);
   }
 
   .takanorip-headerLogoLink {

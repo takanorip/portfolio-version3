@@ -1,11 +1,25 @@
 module.exports = function(eleventyConfig) {
+  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+  const pluginRss = require("@11ty/eleventy-plugin-rss");
+  const markdownIt = require("markdown-it");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const markdownItTableOfContents = require("markdown-it-table-of-contents");
 
   eleventyConfig.addLayoutAlias("works", "layouts/works.njk");
+  eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/**/*.png");
+  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
+
+  const options = {
+    html: true
+  };
+  const markdownLib = markdownIt(options).use(markdownItAnchor).use(markdownItTableOfContents);
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     templateFormats: [
