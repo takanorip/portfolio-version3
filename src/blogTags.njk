@@ -10,17 +10,25 @@ filter:
 templateClass: blog-list-content
 title: BLOG
 ---
-{% include "components/head.njk" %}
 {% set taglist = collections[ tag ] %}
 
+<h2 class="takanorip-blogTagsTitle">tag: "{{ tag }}"</h2>
 <ul class="takanorip-blogList">
-{%- for item in taglist | reverse -%}
-  <li class="takanorip-blogListItem">
-    <a class="takanorip-blogListLink" href="{{ item.url }}">
-      <div class="takanorip-blogListLinkWrap">
-          {{ item.data.title }}
+  {%- for item in taglist | reverse -%}
+    <li class="takanorip-blogListItem">
+      <a class="takanorip-blogListLink" href="{{ item.url }}">
+        {{ item.data.title }}
+      </a>
+      <div class="takanorip-blogListInfo">
+        <p class="takanorip-blogListDate">{{ item.data.created_at }}</p>
+        <ul class="takanorip-blogTagList">
+          {%- for t in item.data.tags -%}
+          {% if t !== 'blog' %}
+          <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/tags/{{ t }}/">{{ t }}</a></li>
+          {% endif %}
+          {%- endfor -%}
+        </ul>
       </div>
-    </a>
-  </li>
-{%- endfor -%}
+    </li>
+  {%- endfor -%}
 </ul>

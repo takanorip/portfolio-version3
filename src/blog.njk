@@ -4,16 +4,23 @@ permalink: /blog/
 templateClass: blog-list-content
 title: BLOG
 ---
-{% include "components/head.njk" %}
 
 <ul class="takanorip-blogList">
 {%- for blog in collections.blog | reverse -%}
   <li class="takanorip-blogListItem">
     <a class="takanorip-blogListLink" href="{{ blog.url }}">
-      <p class="takanorip-blogListLinkWrap">
-          {{ blog.data.title }}
-      </p>
+      {{ blog.data.title }}
     </a>
+    <div class="takanorip-blogListInfo">
+      <p class="takanorip-blogListDate">{{ blog.data.created_at }}</p>
+      <ul class="takanorip-blogTagList">
+        {%- for t in blog.data.tags -%}
+        {% if t !== 'blog' %}
+        <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/tags/{{ t }}/">{{ t }}</a></li>
+        {% endif %}
+        {%- endfor -%}
+      </ul>
+    </div>
   </li>
 {%- endfor -%}
 </ul>
