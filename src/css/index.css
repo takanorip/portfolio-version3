@@ -504,10 +504,12 @@ code {
 
 .takanorip-blogTagList::before {
   content: '[';
+  margin-right: 4px;
 }
 
 .takanorip-blogTagList::after {
   content: ']';
+  margin-left: 4px;
 }
 
 .takanorip-blogListItem:nth-child(n+2) {
