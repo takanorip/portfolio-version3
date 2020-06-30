@@ -1,0 +1,37 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "takanorip blog",
+    "subtitle": "I am writing about my daily life.",
+    "url": "https://takanorip.com/blog/",
+    "feedUrl": "https://takanorip.com/blog/feed.xml",
+    "author": {
+      "name": "takanorip",
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title_blog }}</title>
+  <subtitle>{{ metadata.description_blog }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url_blog }}"/>
+  <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
+  <id>{{ metadata.url_blog }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+  </author>
+  {%- for blog in collections.blog %}
+  {% set absolutePostUrl %}{{ blog.url | url | absoluteUrl(metadata.url_blog) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ blog.created_at | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ blog.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

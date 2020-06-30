@@ -3,6 +3,7 @@
   "title_blog": "takanorip blog",
   "url": "https://takanorip.com/",
   "url_blog": "https://takanorip.com/blog/",
+  "feedUrl": "https://takanorip.com/blog/feed.xml",
   "description": "frontend developer / interface designer",
   "description_blog": "frontend developer / interface designer",
   "ogp": {
