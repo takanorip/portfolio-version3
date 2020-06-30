@@ -6,7 +6,7 @@ title: BLOG
 ---
 
 <ul class="takanorip-blogList">
-{%- for blog in collections.blog | reverse -%}
+{%- for blog in collections.blog -%}
   <li class="takanorip-blogListItem">
     <a class="takanorip-blogListLink" href="{{ blog.url }}">
       {{ blog.data.title }}
