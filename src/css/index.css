@@ -600,6 +600,7 @@ code {
 
 .takanorip-blogFooterContents {
   display: flex;
+  align-items: center;
 }
 
 .takanorip-blogFooterTop {
