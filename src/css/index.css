@@ -566,7 +566,7 @@ code {
   margin-right: var(--spacing-1);
 }
 
-.takanorip-contents {
+.takanorip-blogBase .takanorip-contents {
   font-family: var(--blog-font-family);
 }
 
