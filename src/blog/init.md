@@ -1,28 +1,46 @@
 ---
-title: "こんにちはInit"
-created_at: "2018-10-08"
+title: "ブログつくりました2020"
+created_at: "2020-06-30"
 tags:
   - blog
-  - web
-  - Foo
+  - Tech
 layout: layouts/blog.njk
 ---
 
 **TOC**
 [[toc]]
 
-こんにちは。Hello.
+こんにちは。takanoripです。
+ブログをつくってみました。
 
-- Blog
-- 作りました
-  - code
+## 技術構成
 
-これは`code`です
+今回は[`11ty`](https://www.11ty.dev/)を使った。 
+プレーンなStatic Site Generator。
+もともとあったポートフォリオを増築したので、ちょっといびつな設計になってなくもない。
+気になる人は[GitHubのリポジトリ](https://github.com/takanorip/portfolio-version3)をみてね。（コード汚いのは許して）
 
-## Sample
+11tyは比較的Pluginも充実しててお手軽に始められるので良い。
+今回使用したPlugin, Libraryたちはこんな感じ。
 
-``` js
-function takanoripFunction() {
-  return true;
-}
-```
+- [Syntax Highlighting](https://github.com/11ty/eleventy-plugin-syntaxhighlight)
+- [RSS](https://github.com/11ty/eleventy-plugin-rss)
+- [markdown-it-anchor](https://github.com/valeriangalliat/markdown-it-anchor)
+- [markdown-it-table-of-contents](https://github.com/Oktavilla/markdown-it-table-of-contents)
+
+今回対応した機能はこちら。
+画像のLazy Loadはあんまり画像使う予定ないので後回しにした。
+
+- タグ
+- Syntax Highlighting
+- RSS
+- 目次
+
+記事はマークダウンで書けるので、GIｔHub上で直接編集＆コミットする運用でいこうかなとおもいます。
+Headless CMSも検討したんだけど、そこまでするモチベーションがなかったという話もある。
+
+今後対応したい機能一覧
+
+- タイトルからog:image自動生成
+- 全文検索
+- 画像遅延読み込み
