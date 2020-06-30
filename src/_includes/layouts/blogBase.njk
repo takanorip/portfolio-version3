@@ -1,31 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ renderData.title or title or metadata.title }}</title>
+    <title>{{ renderData.title or title or metadata.title_blog }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
-    <meta property="og:url" content="{{ metadata.url }}"/>
+    <meta property="og:url" content="{{ metadata.url_blog }}"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}"/>
-    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}"/>
-    <meta property="og:image" content="{{ metadata.ogp.ogImage }}"/>
-    <meta name="twitter:card" content="{{ metadata.ogp.twitterCard }}" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title_blog }}"/>
+    <meta property="og:description" content="{{ renderData.description or description or metadata.description_blog }}"/>
+    <meta property="og:image" content="{{ metadata.ogp_blog.ogImage }}"/>
+    <meta name="twitter:card" content="{{ metadata.ogp_blog.twitterCard }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/blog/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/blog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/blog/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/blog/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/blog/safari-pinned-tab.svg" color="#161016">
+    <link rel="shortcut icon" href="/img/favicon/blog/favicon.ico">
+    <meta name="msapplication-TileColor" content="#161016">
+    <meta name="msapplication-config" content="/img/favicon/blog/browserconfig.xml">
+    <meta name="theme-color" content="#E6ECE6">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Overpass:wght@600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism.css' | url }}">
@@ -50,7 +44,7 @@
     <footer class="takanorip-blogFooter">
       <div class="takanorip-blogFooterContents">
         <p class="takanorip-blogFooterName">takanorip</p>
-        <a href="https://takanorip.com/">Twitter</a>
+        <a href="{{ metadata.twitter }}">Twitter</a>
       </div>
       <p class="takanorip-blogFooterTop"><a href="#top">先頭に戻る</a></p>
     </footer>

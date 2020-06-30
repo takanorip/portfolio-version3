@@ -1,11 +1,17 @@
 {
   "title": "takanorip.com",
-  "blogTitle": "takanorip's blog",
+  "title_blog": "takanorip blog",
   "url": "https://takanorip.com/",
+  "url_blog": "https://takanorip.com/blog/",
   "description": "frontend developer / interface designer",
+  "description_blog": "frontend developer / interface designer",
   "ogp": {
     "ogImage": "https://takanorip.com/img/og-image.png",
     "twitterCard": "summary_large_image"
+  },
+  "ogp_blog": {
+    "ogImage": "https://takanorip.com/img/og-image-blog.png",
+    "twitterCard": "summary"
   },
   "author": {
     "name": "takanorip"
