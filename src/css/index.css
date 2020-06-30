@@ -154,7 +154,7 @@ code {
 
 .takanorip-blogBoby ul {
   margin-left: var(--spacing-2);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-3);
 }
 
 .takanorip-blogBoby li {
@@ -497,6 +497,11 @@ code {
   margin-bottom: var(--spacing-5);
 }
 
+.toc-container-header {
+  font-weight: bold;
+  margin-bottom: var(--spacing-1);
+}
+
 .takanorip-blogTagList::before {
   content: '[';
 }
@@ -543,6 +548,7 @@ code {
 
 .takanorip-blogTag {
   display: flex;
+  align-items: center;
 }
 
 .takanorip-blogTagList {
@@ -571,20 +577,21 @@ code {
 }
 
 .takanorip-blogBoby p {
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-3);
 }
 
 .takanorip-blogBoby h2,
 .takanorip-blogBoby h3 {
-  margin-top: var(--spacing-8);
   margin-bottom: var(--spacing-3);
 }
 
 .takanorip-blogBoby h2 {
+  margin-top: var(--spacing-8);
   font-size: var(--h2-font-size);
 }
 
 .takanorip-blogBoby h3 {
+  margin-top: var(--spacing-5);
   font-size: var(--h3-font-size);
 }
 

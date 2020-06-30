@@ -16,9 +16,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   const options = {
-    html: true
+    html: true,
+    breaks: true,
   };
-  const markdownLib = markdownIt(options).use(markdownItAnchor).use(markdownItTableOfContents);
+  const markdownLib = markdownIt(options).use(markdownItAnchor).use(markdownItTableOfContents, {
+    containerHeaderHtml: '<div class="toc-container-header">TOC</div>'
+  });
   eleventyConfig.setLibrary("md", markdownLib);
 
   return {
