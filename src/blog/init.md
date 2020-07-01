@@ -1,6 +1,6 @@
 ---
 title: "こんにちはInit"
-date: "2019-10-08"
+date: "1991-07-16"
 tags:
   - blog
   - web
@@ -8,7 +8,6 @@ tags:
 layout: layouts/blog.njk
 ---
 
-**TOC**
 [[toc]]
 
 こんにちは。Hello.
