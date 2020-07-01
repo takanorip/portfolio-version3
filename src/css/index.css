@@ -735,6 +735,10 @@ code {
     margin-bottom: var(--spacing-1);
   }
 
+  .takanorip-blogTitle {
+    font-size: var(--h2-font-size);
+  }
+
   .takanorip-blogInfo {
     display: block;
   }
