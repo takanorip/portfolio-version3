@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("works", "layouts/works.njk");
   eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
-  eleventyConfig.addPassthroughCopy("netlify.toml");
+  eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
