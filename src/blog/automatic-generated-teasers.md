@@ -12,7 +12,7 @@ layout: layouts/blog.njk
 
 ## 概要
 
-ブログにシェア画像を自動生成機能をつけた。[この記事](https://fettblog.eu/11ty-automatic-twitter-cards/)を参考にした。
+シェア画像自動生成機能をつけた。[この記事](https://fettblog.eu/11ty-automatic-twitter-cards/)を参考にした。
 
 大体こんな感じ。
 
