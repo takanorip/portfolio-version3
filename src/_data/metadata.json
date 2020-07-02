@@ -7,12 +7,12 @@
   "description": "frontend developer / interface designer",
   "description_blog": "I am writing about my daily life.",
   "ogp": {
-    "ogImage": "https://takanorip.com/img/og-image.png",
+    "ogImageUrl": "https://takanorip.com/img/og-image.png",
     "twitterCard": "summary_large_image"
   },
   "ogp_blog": {
-    "ogImage": "https://takanorip.com/img/og-image-blog.png",
-    "twitterCard": "summary"
+    "ogImageUrl": "https://takanorip.com/img/og-image-blog.png",
+    "twitterCard": "summary_large_image"
   },
   "author": {
     "name": "takanorip"

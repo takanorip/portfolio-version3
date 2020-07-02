@@ -20,9 +20,9 @@ templateClass: blog-content
     <p class="takanorip-blogTagTitle">tags:</p>
     <ul class="takanorip-blogTagList">
     {%- for t in tags -%}
-      {% set isNotBlog = t !== 'blog' %}
-      {% if isNotBlog %}
-      <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/tags/{{ t }}/">{{ t }}</a></li>
+      {% if t !== 'blog' %}
+      {% set tagUrl = '/blog/tags/' + t + '/' %}
+      <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="{{ tagUrl | url }}">{{ t }}</a></li>
       {% endif %}
     {%- endfor -%}
     </ul>
@@ -33,13 +33,12 @@ templateClass: blog-content
 </div>
 <div class="takanorip-twitter">
   {% set tweetText = title + ' - takanorip blog https://takanorip.com' + page.url %}
+  {% set tweetUrl %}https://twitter.com/intent/tweet?text={{ tweetText | urlencode }}{% endset %}
   <a
     class="takanorip-twitterLink"
-    href="https://twitter.com/intent/tweet?text={{ tweetText | urlencode }}"
+    href="{{ tweetUrl }}"
     data-size="large"
     rel="noopener noreferrer"
     target="_blank"
-  >
-    Share on Twitter
-  </a>
+  >Share on Twitter</a>
 </div>

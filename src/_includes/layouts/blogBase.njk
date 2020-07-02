@@ -9,7 +9,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ renderData.title or title or metadata.title_blog }}"/>
     <meta property="og:description" content="{{ renderData.description or description or metadata.description_blog }}"/>
-    <meta property="og:image" content="{{ metadata.ogp_blog.ogImage }}"/>
+    <meta property="og:image" content="{{ renderData.ogImageUrl or ogImageUrl or metadata.ogp_blog.ogImageUrl }}"/>
     <meta name="twitter:card" content="{{ metadata.ogp_blog.twitterCard }}" />
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/blog/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/blog/favicon-32x32.png">
@@ -20,9 +20,9 @@
     <meta name="msapplication-TileColor" content="#161016">
     <meta name="msapplication-config" content="/img/favicon/blog/browserconfig.xml">
     <meta name="theme-color" content="#E6ECE6">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Overpass:wght@600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism.css' | url }}">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Overpass:wght@600;900&display=swap" rel="stylesheet">
   </head>
   <body {% if templateClass %} class="{{ templateClass }} takanorip-blogBase"{% endif %}>
     <header class="takanorip-header">

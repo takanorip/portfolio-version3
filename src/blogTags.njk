@@ -20,7 +20,7 @@ title: BLOG
         {{ item.data.title }}
       </a>
       <div class="takanorip-blogListInfo">
-        <p class="takanorip-blogListDate">{{ item.data.created_at }}</p>
+        <p class="takanorip-blogListDate">{{ item.data.date }}</p>
         <ul class="takanorip-blogTagList">
           {%- for t in item.data.tags -%}
           {% if t !== 'blog' %}
