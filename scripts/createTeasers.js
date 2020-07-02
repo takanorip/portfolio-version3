@@ -1,6 +1,5 @@
 const nodeHtmlToImage = require('node-html-to-image')
 const fs = require('fs');
-const { resolve } = require('path');
 
 const dir = './_site/teasers'
 

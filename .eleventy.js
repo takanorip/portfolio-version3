@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("works", "layouts/works.njk");
   eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
-  eleventyConfig.addPassthroughCopy("src/manifest.json");
+  eleventyConfig.addPassthroughCopy("netlify.toml");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
@@ -20,6 +20,7 @@ module.exports = function(eleventyConfig) {
     breaks: true,
   };
   const markdownLib = markdownIt(options).use(markdownItAnchor).use(markdownItTableOfContents, {
+    includeLevel: [1,2,3],
     containerHeaderHtml: '<div class="toc-container-header">TOC</div>'
   });
   eleventyConfig.setLibrary("md", markdownLib);
