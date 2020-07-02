@@ -45,13 +45,14 @@ body {
 .takanorip-blogBase p,
 .takanorip-blogBase a,
 .takanorip-blogBase ul,
+.takanorip-blogBase ol,
 .takanorip-blogBase li {
   color: var(--color-blog-black);
   background-color: var(--color-blog-gray);
   letter-spacing: 0;
 }
 
-h1, h2, h3, p, a, ul, li {
+h1, h2, h3, p, a, ul, ol, li {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -62,7 +63,7 @@ p {
   line-height: 1.7;
 }
 
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -152,17 +153,30 @@ code {
   text-decoration: underline;
 }
 
-.takanorip-blogBoby ul {
+.takanorip-blogBoby ul,
+.takanorip-blogBoby ol {
   margin-left: var(--spacing-2);
   margin-bottom: var(--spacing-3);
+  counter-reset: list;
+}
+
+.takanorip-blogBoby li>ul,
+.takanorip-blogBoby li>ol {
+  margin-bottom: 0;
 }
 
 .takanorip-blogBoby li {
   line-height: 1.7;
 }
 
-.takanorip-blogBoby li::before {
+.takanorip-blogBoby ul>li::before {
   content: '-';
+  margin-right: var(--spacing-1);
+}
+
+.takanorip-blogBoby ol>li::before {
+  counter-increment: list;
+  content: counter(list)'.';
   margin-right: var(--spacing-1);
 }
 
@@ -489,7 +503,8 @@ code {
 .takanorip-work p,
 .takanorip-work a,
 .takanorip-work li,
-.takanorip-work ul {
+.takanorip-work ul,
+.takanorip-work ol {
   font-family: var(--medium-font-family);
 }
 
