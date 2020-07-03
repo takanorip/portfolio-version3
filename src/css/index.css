@@ -538,6 +538,10 @@ blockquote::before {
   margin-bottom: var(--spacing-5);
 }
 
+.table-of-contents > li {
+  line-height: 2;
+}
+
 .toc-container-header {
   font-weight: bold;
   margin-bottom: var(--spacing-1);
