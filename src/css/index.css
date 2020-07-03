@@ -77,7 +77,33 @@ code {
   color: var(--color-blog-gray);
   padding: 2px 6px;
   margin: 0 4px;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+
+pre {
+  border-radius: 4px;
+}
+
+blockquote {
+  margin: 0 0 var(--spacing-3) 0;
+  padding: 0 0 0 var(--spacing-3);
+  position: relative;
+  opacity: 0.8;
+}
+
+blockquote::before {
+  content: '';
+  width: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: var(--color-blog-black);
+}
+
+.takanorip-blogBoby blockquote > p {
+  margin-bottom: 0;
 }
 
 .takanorip-header {
