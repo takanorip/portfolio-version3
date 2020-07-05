@@ -40,6 +40,10 @@ body {
   /* -webkit-font-smoothing: antialiased; */
 }
 
+.takanorip-blogBase {
+  background-color: var(--color-blog-gray);
+}
+
 .takanorip-blogBase,
 .takanorip-blogBase h1,
 .takanorip-blogBase h2,
@@ -50,7 +54,6 @@ body {
 .takanorip-blogBase ol,
 .takanorip-blogBase li {
   color: var(--color-blog-black);
-  background-color: var(--color-blog-gray);
   letter-spacing: 0;
 }
 
@@ -818,6 +821,10 @@ blockquote::before {
 }
 
 @media (prefers-color-scheme: dark) {
+  .takanorip-blogBase {
+    background-color: var(--color-blog-black);
+  }
+
   .takanorip-blogBase,
   .takanorip-blogBase h1,
   .takanorip-blogBase h2,
@@ -827,7 +834,6 @@ blockquote::before {
   .takanorip-blogBase ul,
   .takanorip-blogBase ol,
   .takanorip-blogBase li {
-    background-color: var(--color-blog-black);
     color: var(--color-blog-gray);
   }
 
