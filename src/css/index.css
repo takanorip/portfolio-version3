@@ -5,19 +5,20 @@
   --bold-font-family: "FuturaLTPro-Bold", 'Overpass', 'Noto Sans JP', "Hiragino Sans", sans-serif;
   --blog-font-family: 'M PLUS Rounded 1c', "Hiragino Sans", sans-serif;
   --code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  --title-font-size: 96px;
-  --h1-font-size: 42px;
-  --h2-font-size: 25px;
-  --h3-font-size: 18px;
-  --body-font-size: 16px;
-  --spacing-1: 8px;
-  --spacing-2: 16px;
-  --spacing-3: 24px;
-  --spacing-4: 32px;
-  --spacing-5: 40px;
-  --spacing-8: 64px;
-  --spacing-13: 104px;
-  --spacing-21: 168px;
+  --title-font-size: 16rem;
+  --h1-font-size: calc(42 / 16 * 1rem);
+  --h2-font-size: calc(25 / 16 * 1rem);
+  --h3-font-size: calc(18 / 16 * 1rem);
+  --body-small-font-size: calc(18 / 16 * 1rem);
+  --body-font-size: 1rem;
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-3: 1.5rem;
+  --spacing-4: 2rem;
+  --spacing-5: 2.5rem;
+  --spacing-8: 4rem;
+  --spacing-13: 6.5rem;
+  --spacing-21: 10.5rem;
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
   --color-primary1: #009EFD;
   --color-primary2: #2AF598;
@@ -34,8 +35,9 @@ body {
   color: #fff;
   background-color: #000;
   font-family: var(--bold-font-family);
-  /* -webkit-font-smoothing: antialiased; */
   margin: 0;
+  letter-spacing: 1.25px;
+  /* -webkit-font-smoothing: antialiased; */
 }
 
 .takanorip-blogBase,
@@ -56,11 +58,10 @@ h1, h2, h3, p, a, ul, ol, li {
   color: #fff;
   margin: 0;
   padding: 0;
-  letter-spacing: 2px;
 }
 
-p {
-  line-height: 1.7;
+p, a, li, dd, dt {
+  line-height: 1.5;
 }
 
 ul, ol {
@@ -78,6 +79,7 @@ code {
   padding: 2px 6px;
   margin: 0 4px;
   border-radius: 4px;
+  font-size: 14px;
 }
 
 pre {
@@ -115,6 +117,7 @@ blockquote::before {
   align-items: center;
   position: relative;
   z-index: 2;
+  letter-spacing: 2px;
 }
 
 .takanorip-headerLogo {
@@ -168,6 +171,11 @@ blockquote::before {
   max-width: var(--content-max-width);
   width: var(--content-width);
   margin: 0 auto;
+  font-size: var(--body-small-font-size);
+}
+
+.takanorip-blogBase .takanorip-contents {
+  font-size: var(--body-font-size);
 }
 
 .takanorip-blogBase .takanorip-contents {
@@ -177,6 +185,10 @@ blockquote::before {
 
 .takanorip-blogBase .takanorip-contents a {
   text-decoration: underline;
+}
+
+.takanorip-blogBoby {
+  max-width: 720px;
 }
 
 .takanorip-blogBoby ul,
@@ -210,8 +222,10 @@ blockquote::before {
   padding: var(--spacing-13) 0 var(--spacing-8);
 }
 
-.takanorip-headTitle {
+.takanorip-headTitle,
+.takanorip-sectionTitle {
   font-size: 64px;
+  letter-spacing: 2px;
 }
 
 .about-content .takanorip-headTitle {
@@ -305,7 +319,7 @@ blockquote::before {
 }
 
 .takanorip-aboutSection p:not(:last-of-type) {
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-3);
 }
 
 .takanorip-aboutSection:not(:last-child) {
@@ -329,7 +343,6 @@ blockquote::before {
 
 .takanorip-experience {
   margin: 0;
-  letter-spacing: 2px;
 }
 
 .takanorip-experienceTitle:not(:first-of-type) {
@@ -349,10 +362,11 @@ blockquote::before {
 
 .takanorip-skillItem {
   font-family: var(--medium-font-family);
-  padding: var(--spacing-1) var(--spacing-2);
+  padding: 0 var(--spacing-1);
   background-color: #fff;
   color: #000;
   margin: 4px;
+  line-height: 32px;
 }
 
 /* WORKS */
@@ -431,6 +445,7 @@ blockquote::before {
   padding: 0 var(--spacing-1);
   background: #fff;
   color: #000;
+  letter-spacing: 2px;
 }
 
 .takanorip-workInfo {
@@ -476,8 +491,8 @@ blockquote::before {
 .takanorip-workTechsItem {
   font-family: var(--medium-font-family);
   margin: 4px;
-  padding: 6px 8px;
-  line-height: 1;
+  padding: 0 var(--spacing-1);
+  line-height: 32px;
   background-color: var(--color-primary1);
   color: #000;
 }
@@ -490,6 +505,7 @@ blockquote::before {
 
 .takanorip-workViewDetailWrap {
   display: flex;
+  align-items: center;
 }
 
 .takanorip-workViewDetailText {
@@ -538,7 +554,7 @@ blockquote::before {
   margin-bottom: var(--spacing-5);
 }
 
-.table-of-contents > li {
+.table-of-contents li {
   line-height: 2;
 }
 
@@ -786,5 +802,17 @@ blockquote::before {
 
   .takanorip-blogInfo {
     display: block;
+  }
+
+  .takanorip-blogListInfo {
+    display: block;
+  }
+
+  .takanorip-blogTagList {
+    margin-left: 0;
+  }
+
+  .takanorip-blogFooter {
+    margin-bottom: var(--spacing-5);
   }
 }

@@ -8,19 +8,12 @@ title: BLOG
 <ul class="takanorip-blogList">
 {%- for blog in collections.blog | reverse -%}
   <li class="takanorip-blogListItem">
+    <div class="takanorip-blogListInfo">
+      <p class="takanorip-blogListDate">{{ blog.data.date }}</p>
+    </div>
     <a class="takanorip-blogListLink" href="{{ blog.url }}">
       {{ blog.data.title }}
     </a>
-    <div class="takanorip-blogListInfo">
-      <p class="takanorip-blogListDate">{{ blog.data.date }}</p>
-      <ul class="takanorip-blogTagList">
-        {%- for t in blog.data.tags -%}
-        {% if t !== 'blog' %}
-        <li class="takanorip-blogTagItem"><a class="takanorip-blogTagLink" href="/blog/tags/{{ t }}/">{{ t }}</a></li>
-        {% endif %}
-        {%- endfor -%}
-      </ul>
-    </div>
   </li>
 {%- endfor -%}
 </ul>
