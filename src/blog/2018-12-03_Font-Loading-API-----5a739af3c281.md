@@ -6,7 +6,7 @@ tags:
 layout: layouts/blog.njk
 ---
 
-## Font Loading API の紹介
+[[toc]]
 
 ![](https://cdn-images-1.medium.com/max/800/1*G-RrNppUi7a2aWGlkRliog.png)
 

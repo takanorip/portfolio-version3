@@ -6,7 +6,7 @@ tags:
 layout: layouts/blog.njk
 ---
 
-## Figmaを導入して思ったこと
+[[toc]]
 
 ![](https://cdn-images-1.medium.com/max/800/1*M-Hwmsyssw1CNffx-Jcg_g.png)
 

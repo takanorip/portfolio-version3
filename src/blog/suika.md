@@ -1,6 +1,6 @@
 ---
 title: "僕のスイカの食べ方"
-date: "2020-07-01"
+date: 2020-07-01
 tags:
   - blog
   - random

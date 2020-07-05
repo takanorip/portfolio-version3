@@ -6,7 +6,7 @@ tags:
 layout: layouts/blog.njk
 ---
 
-## My latest favorite
+[[toc]]
 
 お気に入りの曲って忘れちゃうなと思ったのでメモしとく。
 

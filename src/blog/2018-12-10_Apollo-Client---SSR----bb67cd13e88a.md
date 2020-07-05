@@ -6,7 +6,7 @@ tags:
 layout: layouts/blog.njk
 ---
 
-## Apollo Client で SSR する
+[[toc]]
 
 ![](https://cdn-images-1.medium.com/max/800/1*gbQLv0JIO_8MPeaBrxBHKw.png)
 
