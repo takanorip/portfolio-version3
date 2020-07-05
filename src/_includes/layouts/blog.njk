@@ -14,7 +14,7 @@ templateClass: blog-content
   {% endif %}
   <div class="takanorip-blogDate">
     <p class="takanorip-blogDateTitle">created at:</p>
-    <p class="takanorip-blogDateDate">{{ date }}</p>
+    <p class="takanorip-blogDateDate">{{ date.toISOString().split('T')[0] }}</p>
   </div>
   <div class="takanorip-blogTag">
     <p class="takanorip-blogTagTitle">tags:</p>
