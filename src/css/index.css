@@ -816,3 +816,27 @@ blockquote::before {
     margin-bottom: var(--spacing-5);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .takanorip-blogBase,
+  .takanorip-blogBase h1,
+  .takanorip-blogBase h2,
+  .takanorip-blogBase h3,
+  .takanorip-blogBase p,
+  .takanorip-blogBase a,
+  .takanorip-blogBase ul,
+  .takanorip-blogBase ol,
+  .takanorip-blogBase li {
+    background-color: var(--color-blog-black);
+    color: var(--color-blog-gray);
+  }
+
+  blockquote::before {
+    background-color: var(--color-blog-gray);
+  }
+
+  code {
+    background-color: var(--color-blog-gray);
+    color: var(--color-blog-black);
+  }
+}
