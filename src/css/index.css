@@ -57,6 +57,11 @@ body {
   letter-spacing: 0;
 }
 
+.takanorip-blogBase img {
+  max-width: 640px;
+  width: 100%;
+}
+
 h1, h2, h3, p, a, ul, ol, li {
   color: #fff;
   margin: 0;
@@ -700,6 +705,7 @@ blockquote::before {
   .takanorip-blogBase .takanorip-nav {
     position: static;
     width: auto;
+    background: none;
   }
 
   .takanorip-blogBase .takanorip-contents {
