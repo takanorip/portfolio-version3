@@ -34,7 +34,7 @@ layout: layouts/blog.njk
 
 ### Computed Data
 
-記事のデータに`ogImageUrl`を持たせる必要があったので、11tyの`Computed Data`([https://www.11ty.dev/docs/data-computed/](https://www.11ty.dev/docs/data-computed/))という仕組みを利用した。`blog`ディレクトリに`blog.11tydata.js`を配置して下記のようなコードを書けば、`blog`配下にある記事すべてに`ogImageUrl`というデータが追加される。
+記事のデータに`ogImageUrl`を持たせる必要があったので、11tyの[`Computed Data`](https://www.11ty.dev/docs/data-computed/)という仕組みを利用した。`blog`ディレクトリに`blog.11tydata.js`を配置して下記のようなコードを書けば、`blog`配下にある記事すべてに`ogImageUrl`というデータが追加される。
 
 ```js
 module.exports = {

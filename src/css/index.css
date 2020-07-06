@@ -88,6 +88,11 @@ code {
   margin: 0 4px;
   border-radius: 4px;
   font-size: 14px;
+  white-space: pre;
+}
+
+a > code {
+  text-decoration: underline;
 }
 
 pre {

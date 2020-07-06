@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
   const markdownIt = require("markdown-it");
   const markdownItAnchor = require("markdown-it-anchor");
   const markdownItTableOfContents = require("markdown-it-table-of-contents");
+  const iterator = require('markdown-it-for-inline');
 
   eleventyConfig.addLayoutAlias("works", "layouts/works.njk");
   eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
@@ -18,11 +19,21 @@ module.exports = function(eleventyConfig) {
   const options = {
     html: true,
     breaks: true,
+    linkify: true,
   };
-  const markdownLib = markdownIt(options).use(markdownItAnchor).use(markdownItTableOfContents, {
-    includeLevel: [1,2,3],
-    containerHeaderHtml: '<div class="toc-container-header">TOC</div>'
-  });
+  const markdownLib = markdownIt(options)
+    .use(markdownItAnchor)
+    .use(markdownItTableOfContents, {
+      includeLevel: [1,2,3],
+      containerHeaderHtml: '<div class="toc-container-header">TOC</div>'
+    })
+    .use(iterator, 'url_new_win', 'link_open', (tokens, idx) => {
+      tokens[idx].attrPush([ 'target', '_blank' ]);
+      tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ]);
+    })
+    .use(iterator, 'lazy_loading', 'image', (tokens, idx) => {
+      tokens[idx].attrSet('loading', 'lazy');
+    });
   eleventyConfig.setLibrary("md", markdownLib);
 
   return {
