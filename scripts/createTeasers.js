@@ -5,7 +5,8 @@ const dir = './_site/teasers'
 
 fs.readdir(dir, { withFileTypes: true }, (err, dirents) => {
   if (err) throw err;
-  dirents.forEach(({ name }) => {
+  dirents.forEach(({ name }, i) => {
+    // if (i !== 0) return
     const fileType = name.split('.')[1]
     if (fileType !== 'html') return
     fs.readFile(`${dir}/${name}`, 'utf-8', async (err, data) => {
@@ -13,6 +14,7 @@ fs.readdir(dir, { withFileTypes: true }, (err, dirents) => {
       await nodeHtmlToImage({
         output: `${dir}/${name.split('.')[0]}.png`,
         html: data,
+        waitUntil: 'domcontentloaded',
         puppeteerArgs: {
           defaultViewport: {
             width: 800,
@@ -20,6 +22,7 @@ fs.readdir(dir, { withFileTypes: true }, (err, dirents) => {
           }
         }
       })
+      console.log(`${name.split('.')[0]}`)
     })
   })
 });

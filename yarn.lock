@@ -107,6 +107,11 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
+"@takanorip/markdown-it-table-of-contents@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@takanorip/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.0.1.tgz#48ec794c8803a79e5984b863638005c60a8066c7"
+  integrity sha512-J0uV7cbeKzoFoIpNGOzSYRy7a2aee2+pYJ8NEOT8MBHTEHcavqvhO+zs+yutcm+eQCLvFq6xI9l8P8I0QkdN6Q==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.7.tgz#667eb1640e8039436028055737d2b9986ee336e3"

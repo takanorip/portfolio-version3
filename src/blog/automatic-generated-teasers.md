@@ -1,6 +1,7 @@
 ---
 title: "ブログにシェア画像自動生成機能をつけた"
 date: 2020-07-02
+updated_at: 2020-07-07
 tags:
   - blog
   - tech
@@ -29,7 +30,15 @@ layout: layouts/blog.njk
 
 ### CSS in puppeteer
 
-外部CSSは反映されなかったのでインラインスタイルでCSSを書いた。Google Fontsのフォントを参照したかったんだけど無理だったのでbase64にしてHTMLに埋め込んだ。おかげでHTMLがクソ長になってしまった…。
+~~外部CSSは反映されなかったので~~インラインスタイルでCSSを書いた。~~Google Fontsのフォントを参照したかったんだけど無理だったのでbase64にしてHTMLに埋め込んだ。おかげでHTMLがクソ長になってしまった…。~~
+`node-html-to-image`のoptionにある`waitUntil`に`domcontentloaded`を設定すれば外部CSSも適用される。（base64でフォント埋め込んだせいでビルドが大変遅くなっていた…。）
+
+```js
+{
+  waitUntil: 'domcontentloaded',
+}
+```
+
 あと「ブラウザで見ると問題ないのに生成した画像だとちょっとずれる」みたいなことがあったのでCSSを調整した。`margin-top`があると良くないみたいだったので`padding`にした。
 
 ### Computed Data

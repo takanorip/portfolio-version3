@@ -3,7 +3,7 @@ module.exports = function(eleventyConfig) {
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   const markdownIt = require("markdown-it");
   const markdownItAnchor = require("markdown-it-anchor");
-  const markdownItTableOfContents = require("markdown-it-table-of-contents");
+  const markdownItTableOfContents = require("@takanorip/markdown-it-table-of-contents");
   const iterator = require('markdown-it-for-inline');
 
   eleventyConfig.addLayoutAlias("works", "layouts/works.njk");
@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor)
     .use(markdownItTableOfContents, {
       includeLevel: [1,2,3],
-      containerHeaderHtml: '<div class="toc-container-header">TOC</div>'
+      containerHeaderHtml: '<summary class="toc-container-header">TOC</summary>'
     })
     .use(iterator, 'url_new_win', 'link_open', (tokens, idx) => {
       tokens[idx].attrPush([ 'target', '_blank' ]);

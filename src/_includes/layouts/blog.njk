@@ -9,7 +9,7 @@ templateClass: blog-content
   {% if updated_at %}
   <div class="takanorip-blogDate">
     <p class="takanorip-blogDateTitle">updated at:</p>
-    <p class="takanorip-blogDateDate">{{ updated_at }}</p>
+    <p class="takanorip-blogDateDate">{{ updated_at.toISOString().split('T')[0] }}</p>
   </div>
   {% endif %}
   <div class="takanorip-blogDate">

@@ -4,13 +4,14 @@
   --medium-font-family: "FuturaLTPro-Heavy", "Hiragino Sans", sans-serif;
   --bold-font-family: "FuturaLTPro-Bold", 'Overpass', 'Noto Sans JP', "Hiragino Sans", sans-serif;
   --blog-font-family: 'M PLUS Rounded 1c', "Hiragino Sans", sans-serif;
-  --code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  --code-font-family: 'Overpass Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --title-font-size: 16rem;
   --h1-font-size: calc(42 / 16 * 1rem);
   --h2-font-size: calc(25 / 16 * 1rem);
   --h3-font-size: calc(20 / 16 * 1rem);
   --body-small-font-size: calc(18 / 16 * 1rem);
   --body-font-size: 1rem;
+  --spacing-0: 0.25rem;
   --spacing-1: 0.5rem;
   --spacing-2: 1rem;
   --spacing-3: 1.5rem;
@@ -24,6 +25,8 @@
   --color-primary2: #2AF598;
   --color-blog-black: #161016;
   --color-blog-gray: #e6ece6;
+  --color-code-black: #2d2d2d;
+  --color-code-gray: #ccc;
 }
 
 html, body {
@@ -80,25 +83,6 @@ a {
   text-decoration: none;
 }
 
-code {
-  font-family: var(--code-font-family);
-  background-color: var(--color-blog-black);
-  color: var(--color-blog-gray);
-  padding: 2px 6px;
-  margin: 0 4px;
-  border-radius: 4px;
-  font-size: 14px;
-  white-space: pre;
-}
-
-a > code {
-  text-decoration: underline;
-}
-
-pre {
-  border-radius: 4px;
-}
-
 blockquote {
   margin: 0 0 var(--spacing-3) 0;
   padding: 0 0 0 var(--spacing-3);
@@ -115,6 +99,14 @@ blockquote::before {
   left: 0;
   border-radius: 4px;
   background-color: var(--color-blog-black);
+}
+
+details {
+  cursor: pointer;
+}
+
+summary {
+  font-size: var(--h2-font-size);
 }
 
 .takanorip-blogBoby blockquote > p {
@@ -378,7 +370,7 @@ blockquote::before {
   padding: 0 var(--spacing-1);
   background-color: #fff;
   color: #000;
-  margin: 4px;
+  margin: var(--spacing-0);
   line-height: 32px;
 }
 
@@ -503,7 +495,7 @@ blockquote::before {
 
 .takanorip-workTechsItem {
   font-family: var(--medium-font-family);
-  margin: 4px;
+  margin: var(--spacing-0);
   padding: 0 var(--spacing-1);
   line-height: 32px;
   background-color: var(--color-primary1);
@@ -578,12 +570,12 @@ blockquote::before {
 
 .takanorip-blogTagList::before {
   content: '[';
-  margin-right: 4px;
+  margin-right: var(--spacing-0);
 }
 
 .takanorip-blogTagList::after {
   content: ']';
-  margin-left: 4px;
+  margin-left: var(--spacing-0);
 }
 
 .takanorip-blogListItem:nth-child(n+2) {
@@ -615,25 +607,27 @@ blockquote::before {
 
 .takanorip-blogInfo {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: var(--spacing-3);
+  font-family: var(--code-font-family);
 }
 
 .takanorip-blogTagTitle {
   font-weight: bold;
+  margin-right: var(--spacing-1);
 }
 
 .takanorip-blogTag {
   display: flex;
-  align-items: center;
 }
 
 .takanorip-blogTagList {
   display: flex;
   list-style: none;
-  margin-left: var(--spacing-1);
+  flex-wrap: wrap;
 }
 
-.takanorip-blogTagItem:nth-child(n+2)::before {
+.takanorip-blogTagItem:not(:last-child)::after {
   content: ',';
   padding-right: var(--spacing-1);
 }
@@ -757,7 +751,7 @@ blockquote::before {
   }
 
   .takanorip-topHeadlineText {
-    padding: 8px 4px;
+    padding: var(--spacing-1) var(--spacing-0);
   }
 
   .takanorip-topTree {
@@ -818,12 +812,13 @@ blockquote::before {
     display: block;
   }
 
-  .takanorip-blogListInfo {
-    display: block;
+  .takanorip-blogDate {
+    margin-right: 0;
+    margin-bottom: var(--spacing-0);
   }
 
-  .takanorip-blogTagList {
-    margin-left: 0;
+  .takanorip-blogListInfo {
+    display: block;
   }
 
   .takanorip-blogFooter {
@@ -853,7 +848,7 @@ blockquote::before {
   }
 
   code {
-    background-color: var(--color-blog-gray);
-    color: var(--color-blog-black);
+    background-color: var(--color-code-gray);
+    color: var(--color-code-black);
   }
 }
