@@ -35,7 +35,8 @@ iframeはそのまま埋め込んでも良かったんだけど、レスポン�
 
 ## ライブラリ公開した
 
-雑に`npm publish`した。（https://www.npmjs.com/package/medium-11ty）こんな感じで使える。
+雑に`npm publish`した。（ https://www.npmjs.com/package/medium-11ty ）
+こんな感じで使える。
 
 ```
 $ npx medium-11ty index.js --input InputPath --output OutputPath
