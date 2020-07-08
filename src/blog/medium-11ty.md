@@ -38,6 +38,6 @@ iframeはそのまま埋め込んでも良かったんだけど、レスポン�
 雑に`npm publish`した。（ https://www.npmjs.com/package/medium-11ty ）
 こんな感じで使える。
 
-```
+```bash
 $ npx medium-11ty index.js --input InputPath --output OutputPath
 ```
