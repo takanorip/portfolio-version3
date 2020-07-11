@@ -17,7 +17,7 @@ title: BLOG
   {%- for item in taglist | reverse -%}
     <li class="takanorip-blogListItem">
       <div class="takanorip-blogListInfo">
-        <p class="takanorip-blogListDate">{{ item.date.toISOString().split('T')[0] }}</p>
+        <p class="takanorip-blogListDate">{{ item.data.date | dateFormat }}</p>
       </div>
       <a class="takanorip-blogListLink" href="{{ item.url }}">
         {{ item.data.title }}
