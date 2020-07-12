@@ -852,3 +852,55 @@ summary {
     color: var(--color-code-black);
   }
 }
+
+/* Algolia Search UI */
+
+.ais-SearchBox-submitIcon path,
+.ais-SearchBox-resetIcon path {
+  fill: var(--color-code-black);
+}
+
+.ais-SearchBox-form {
+  width: 100%;
+  position: relative;
+  padding: 0 0 var(--spacing-1);
+}
+
+.ais-SearchBox-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 var(--spacing-1);
+  font-family: var(--blog-font-family);
+}
+
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 0;
+  padding: 12px;
+}
+
+.ais-SearchBox-submitIcon,
+.ais-SearchBox-resetIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.ais-PoweredBy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ais-Hits {
+  padding-top: var(--spacing-5);
+}
+
+.ais-Hits-item:not(:last-child) {
+  margin-bottom: var(--spacing-1);
+}
+
+.takanorip-hitName {
+  font-size: var(--h3-font-size);
+}

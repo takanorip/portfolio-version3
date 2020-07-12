@@ -6,25 +6,27 @@ const search = instantsearch({
 search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
+    placeholder: 'Search posts',
+    autofocus: true,
+  }),
+  instantsearch.widgets.poweredBy({
+    container: '#poweredby',
   }),
   instantsearch.widgets.hits({
     container: '#hits',
     templates: {
       item: `
-        <div>
-          <div class="hit-name">
+        <a class="takanorip-hitLink" href="/blog/{ "attribute": "id" }">
+          <div class="takanorip-hitName">
             {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
           </div>
-          <div class="hit-description">
-            {{#helpers.highlight}}{ "attribute": "body" }{{/helpers.highlight}}
-          </div>
-        </div>
+        </a>
       `,
     },
   }),
   instantsearch.widgets.pagination({
     container: '#pagination',
-  }),
+  })
 ]);
 
 search.start();
