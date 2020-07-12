@@ -25,6 +25,7 @@
   --color-primary2: #2AF598;
   --color-blog-black: #161016;
   --color-blog-gray: #e6ece6;
+  --color-blog-darkGray: #B8BDB8;
   --color-code-black: #2d2d2d;
   --color-code-gray: #ccc;
 }
@@ -168,6 +169,7 @@ summary {
 .top-content .takanorip-headerLink.top::after,
 .about-content .takanorip-headerLink.about::after,
 .works-content .takanorip-headerLink.works::after,
+.blog-search-content .takanorip-headerLink.search::after,
 .takanorip-headerLink:hover::after {
   transform: scaleX(1);
 }
@@ -702,9 +704,9 @@ summary {
   }
 
   .takanorip-blogBase .takanorip-nav {
-    position: static;
-    width: auto;
-    background: none;
+    background-color: var(--color-blog-gray);
+    border-top: 2px solid var(--color-blog-black);
+    box-sizing: border-box;
   }
 
   .takanorip-blogBase .takanorip-contents {
@@ -724,12 +726,8 @@ summary {
     padding-right: calc(var(--spacing-3) / 2);
   }
 
-  .takanorip-headerLink {
-    padding: var(--spacing-3) 0;
-  }
-
   .takanorip-headerLink::after {
-    bottom: 20px;
+    bottom: 16px;
   }
 
   .takanorip-headSection {
@@ -820,10 +818,6 @@ summary {
   .takanorip-blogListInfo {
     display: block;
   }
-
-  .takanorip-blogFooter {
-    margin-bottom: var(--spacing-5);
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -851,4 +845,113 @@ summary {
     background-color: var(--color-code-gray);
     color: var(--color-code-black);
   }
+}
+
+/* Algolia Search UI */
+
+.ais-SearchBox-submitIcon path,
+.ais-SearchBox-resetIcon path {
+  fill: var(--color-code-black);
+}
+
+.ais-SearchBox-form {
+  width: 100%;
+  position: relative;
+  padding: 0 0 var(--spacing-1);
+}
+
+.ais-SearchBox-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 var(--spacing-5);
+  font-family: var(--blog-font-family);
+}
+
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
+  position: absolute;
+  top: 0;
+  line-height: 0;
+  padding: 12px;
+}
+
+.ais-SearchBox-submit {
+  left: 0;
+}
+
+.ais-SearchBox-reset {
+  right: 0;
+}
+
+.ais-SearchBox-submitIcon,
+.ais-SearchBox-resetIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.ais-PoweredBy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ais-Hits {
+  padding-top: var(--spacing-5);
+}
+
+.ais-Hits-item:not(:last-child) {
+  margin-bottom: var(--spacing-3);
+}
+
+.takanorip-hitLink {
+  text-decoration: none!important;
+}
+
+.takanorip-hitName {
+  font-size: var(--h3-font-size);
+  text-decoration: underline;
+}
+
+.ais-Pagination {
+  margin-top: var(--spacing-5);
+}
+
+.ais-Pagination-item {
+  border: 1px solid var(--color-code-black);
+  margin-right: var(--spacing-1);
+  border-radius: 4px;
+}
+
+.ais-Pagination-item a.ais-Pagination-link {
+  text-decoration: none;
+}
+
+.ais-Pagination-link {
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.ais-Pagination-item--firstPage,
+.ais-Pagination-item--previousPage,
+.ais-Pagination-item--nextPage,
+.ais-Pagination-item--lastPage {
+  font-size: 14px;
+}
+
+.ais-Pagination-item--selected {
+  background-color: var(--color-blog-black);
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+  color: var(--color-blog-gray);
+}
+
+.ais-Pagination-item--disabled {
+  border-color: var(--color-blog-darkGray);
+}
+
+.ais-Pagination-item--disabled .ais-Pagination-link {
+  color: var(--color-blog-darkGray);
 }

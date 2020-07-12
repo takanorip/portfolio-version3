@@ -54,7 +54,7 @@ https://colordesigner.io/
 
 https://design.lyft.com/re-approaching-color-9e604ba22c88
 
-カラーセットを決める際のネーミングやどういうアルゴリズムに従うと良いかとその実践について書かれている。色を3次元的に捉えた図がとても新鮮だった。（僕はこういう考え方をしたことがなかった。）
+カラーセットを決める際のネーミングやどういうアルゴリズムに従うと良いかとその実践について書かれている。色を3次元的に捉えた図がとても新鮮だった。（僕はこういう考え方をしたことがなかった。）
 
 > In interfaces, we don’t need an even distribution of light and dark shades. We need pockets of concentration in light and dark shades with only a few middle shades. We also need to have more control in how colors progress in hue and saturation.
 
