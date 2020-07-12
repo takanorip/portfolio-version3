@@ -3,20 +3,22 @@ const search = instantsearch({
   searchClient: algoliasearch("T3J60MBUA8", "8f49853dd7e9830263fdea7ff69497ee"),
 });
 
+const { configure, searchBox, poweredBy, hits, pagination } = instantsearch.widgets
+
 search.addWidgets([
-  instantsearch.widgets.configure({
+  configure({
     attributesToSnippet: ["body:40"],
     snippetEllipsisText: "[…]",
   }),
-  instantsearch.widgets.searchBox({
+  searchBox({
     container: "#searchbox",
     placeholder: "Search posts",
     autofocus: true,
   }),
-  instantsearch.widgets.poweredBy({
+  poweredBy({
     container: "#poweredby",
   }),
-  instantsearch.widgets.hits({
+  hits({
     container: "#hits",
     templates: {
       item(hit) {
@@ -29,7 +31,7 @@ search.addWidgets([
       },
     },
   }),
-  instantsearch.widgets.pagination({
+  pagination({
     container: "#pagination",
   }),
 ]);

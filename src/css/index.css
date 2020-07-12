@@ -169,6 +169,7 @@ summary {
 .top-content .takanorip-headerLink.top::after,
 .about-content .takanorip-headerLink.about::after,
 .works-content .takanorip-headerLink.works::after,
+.blog-search-content .takanorip-headerLink.search::after,
 .takanorip-headerLink:hover::after {
   transform: scaleX(1);
 }
@@ -703,9 +704,9 @@ summary {
   }
 
   .takanorip-blogBase .takanorip-nav {
-    position: static;
-    width: auto;
-    background: none;
+    background-color: var(--color-blog-gray);
+    border-top: 2px solid var(--color-blog-black);
+    box-sizing: border-box;
   }
 
   .takanorip-blogBase .takanorip-contents {
@@ -725,17 +726,8 @@ summary {
     padding-right: calc(var(--spacing-3) / 2);
   }
 
-  .takanorip-blogBase .takanorip-headerItem {
-    padding-left: var(--spacing-2);
-    padding-right: 0;
-  }
-
-  .takanorip-headerLink {
-    padding: var(--spacing-3) 0;
-  }
-
   .takanorip-headerLink::after {
-    bottom: 20px;
+    bottom: 16px;
   }
 
   .takanorip-headSection {
@@ -825,10 +817,6 @@ summary {
 
   .takanorip-blogListInfo {
     display: block;
-  }
-
-  .takanorip-blogFooter {
-    margin-bottom: var(--spacing-5);
   }
 }
 
