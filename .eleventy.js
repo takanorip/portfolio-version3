@@ -51,9 +51,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("algolia", (collection) => {
     return collection.getFilteredByTags("blog").map((item) => {
+      const body = bodyText(item.template.frontMatter.content);
       const object = {
         id: item.fileSlug,
-        body: bodyText(item.template.frontMatter.content),
+        objectID: item.fileSlug,
+        body: body,
+        excerpt: body.substr(0, 79) + '...',
         title: item.data.title,
         createdAt: format(item.date, "yyyy-MM-dd"),
       };

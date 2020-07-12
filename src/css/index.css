@@ -25,6 +25,7 @@
   --color-primary2: #2AF598;
   --color-blog-black: #161016;
   --color-blog-gray: #e6ece6;
+  --color-blog-darkGray: #B8BDB8;
   --color-code-black: #2d2d2d;
   --color-code-gray: #ccc;
 }
@@ -724,6 +725,11 @@ summary {
     padding-right: calc(var(--spacing-3) / 2);
   }
 
+  .takanorip-blogBase .takanorip-headerItem {
+    padding-left: var(--spacing-2);
+    padding-right: 0;
+  }
+
   .takanorip-headerLink {
     padding: var(--spacing-3) 0;
   }
@@ -869,7 +875,7 @@ summary {
 .ais-SearchBox-input {
   width: 100%;
   height: 40px;
-  padding: 0 var(--spacing-1);
+  padding: 0 var(--spacing-5);
   font-family: var(--blog-font-family);
 }
 
@@ -877,9 +883,16 @@ summary {
 .ais-SearchBox-reset {
   position: absolute;
   top: 0;
-  right: 0;
   line-height: 0;
   padding: 12px;
+}
+
+.ais-SearchBox-submit {
+  left: 0;
+}
+
+.ais-SearchBox-reset {
+  right: 0;
 }
 
 .ais-SearchBox-submitIcon,
@@ -898,9 +911,59 @@ summary {
 }
 
 .ais-Hits-item:not(:last-child) {
-  margin-bottom: var(--spacing-1);
+  margin-bottom: var(--spacing-3);
+}
+
+.takanorip-hitLink {
+  text-decoration: none!important;
 }
 
 .takanorip-hitName {
   font-size: var(--h3-font-size);
+  text-decoration: underline;
+}
+
+.ais-Pagination {
+  margin-top: var(--spacing-5);
+}
+
+.ais-Pagination-item {
+  border: 1px solid var(--color-code-black);
+  margin-right: var(--spacing-1);
+  border-radius: 4px;
+}
+
+.ais-Pagination-item a.ais-Pagination-link {
+  text-decoration: none;
+}
+
+.ais-Pagination-link {
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.ais-Pagination-item--firstPage,
+.ais-Pagination-item--previousPage,
+.ais-Pagination-item--nextPage,
+.ais-Pagination-item--lastPage {
+  font-size: 14px;
+}
+
+.ais-Pagination-item--selected {
+  background-color: var(--color-blog-black);
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+  color: var(--color-blog-gray);
+}
+
+.ais-Pagination-item--disabled {
+  border-color: var(--color-blog-darkGray);
+}
+
+.ais-Pagination-item--disabled .ais-Pagination-link {
+  color: var(--color-blog-darkGray);
 }
