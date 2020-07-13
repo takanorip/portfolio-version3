@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "create-teasers": "node scripts/createTeasers.js",
-    "build": "yarn eleventy --input=src && yarn create-teasers",
+    "save-algolia": "node scripts/algoliaIndex.js",
+    "build": "yarn eleventy --input=src && yarn create-teasers && yarn save-algolia",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
