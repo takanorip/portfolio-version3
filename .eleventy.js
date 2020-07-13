@@ -8,6 +8,30 @@ module.exports = function (eleventyConfig) {
   const format = require("date-fns/format");
   const removeMd = require("remove-markdown");
 
+  const markdownLib = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  })
+  .use(markdownItAnchor)
+  .use(markdownItTableOfContents, {
+    includeLevel: [1, 2, 3],
+    containerHeaderHtml:
+      '<summary class="toc-container-header">TOC</summary>',
+  })
+  .use(iterator, "url_new_win", "link_open", (tokens, idx) => {
+    tokens[idx].attrPush(["target", "_blank"]);
+    tokens[idx].attrPush(["rel", "noopener noreferrer"]);
+  })
+  .use(iterator, "lazy_loading", "image", (tokens, idx) => {
+    tokens[idx].attrSet("loading", "lazy");
+  });
+
+  const bodyText = (md) => {
+    const text = removeMd(md);
+    return text.replace(/\[\[toc\]\]/g, "").replace(/\r?\n/g, "");
+  };
+
   eleventyConfig.addLayoutAlias("works", "layouts/works.njk");
   eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
   eleventyConfig.addPassthroughCopy("_redirects");
@@ -18,41 +42,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/**/*.png");
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
-
-  const options = {
-    html: true,
-    breaks: true,
-    linkify: true,
-  };
-  const markdownLib = markdownIt(options)
-    .use(markdownItAnchor)
-    .use(markdownItTableOfContents, {
-      includeLevel: [1, 2, 3],
-      containerHeaderHtml:
-        '<summary class="toc-container-header">TOC</summary>',
-    })
-    .use(iterator, "url_new_win", "link_open", (tokens, idx) => {
-      tokens[idx].attrPush(["target", "_blank"]);
-      tokens[idx].attrPush(["rel", "noopener noreferrer"]);
-    })
-    .use(iterator, "lazy_loading", "image", (tokens, idx) => {
-      tokens[idx].attrSet("loading", "lazy");
-    });
-  eleventyConfig.setLibrary("md", markdownLib);
-
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
+  eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addNunjucksFilter("dateFormat", (value) => {
+    return value instanceof Date ? format(value, "yyyy-MM-dd") : "";
   });
-
-  const bodyText = (md) => {
-    const text = removeMd(md);
-    return text.replace(/\[\[toc\]\]/g, "").replace(/\r?\n/g, "");
-  };
-
+  eleventyConfig.setLibrary("md", markdownLib);
   eleventyConfig.addCollection("algolia", (collection) => {
     return collection.getFilteredByTags("blog").map((item) => {
       const body = bodyText(item.template.frontMatter.content);
-      const object = {
+      return {
         id: item.fileSlug,
         objectID: item.fileSlug,
         body: body,
@@ -60,12 +58,7 @@ module.exports = function (eleventyConfig) {
         title: item.data.title,
         createdAt: format(item.date, "yyyy-MM-dd"),
       };
-      return object;
     });
-  });
-
-  eleventyConfig.addNunjucksFilter("dateFormat", (value) => {
-    return value instanceof Date ? format(value, "yyyy-MM-dd") : "";
   });
 
   return {

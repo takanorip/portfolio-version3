@@ -2,7 +2,6 @@
 title: "美味しいチャーハンを作りたいなら油を多く使え"
 date: 2020-07-12
 tags:
-  - blog
   - random
   - 料理
 layout: layouts/blog.njk

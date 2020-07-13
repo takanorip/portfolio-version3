@@ -2,7 +2,6 @@
 title: "Mediumの記事を移行した"
 date: 2020-07-08
 tags:
-  - blog
   - tech
   - turndown
   - jsdom

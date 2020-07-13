@@ -2,7 +2,6 @@
 title: "UIの色設計に役立った記事・ツールまとめ"
 date: 2020-07-03
 tags:
-  - blog
   - design
   - color scheme
 layout: layouts/blog.njk

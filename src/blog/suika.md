@@ -2,7 +2,6 @@
 title: "僕のスイカの食べ方"
 date: 2020-07-01
 tags:
-  - blog
   - random
   - 西瓜
 layout: layouts/blog.njk

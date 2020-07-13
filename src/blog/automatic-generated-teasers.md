@@ -3,7 +3,6 @@ title: "ブログにシェア画像自動生成機能をつけた"
 date: 2020-07-02
 updated_at: 2020-07-07
 tags:
-  - blog
   - tech
   - node-html-to-image
 layout: layouts/blog.njk

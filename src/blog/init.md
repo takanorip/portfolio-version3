@@ -2,7 +2,6 @@
 title: "こんにちはInit"
 date: 1991-07-16
 tags:
-  - blog
   - web
   - Foo
 layout: layouts/blog.njk
