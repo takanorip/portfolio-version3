@@ -2578,10 +2578,10 @@ node-fetch@^2.6.0:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
-node-html-to-image@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/node-html-to-image/-/node-html-to-image-3.0.0.tgz#b88fddb0fd811305e9739c6f840e6ecedc27fdfc"
-  integrity sha512-B84BFZb/qYxZqnoNHnCB+XW3FtMAjN9zDNuvyuKtyIMS6K4BPa7AJ/1UV4WILif0FBWV7EZQVRXKFTil4rORfg==
+node-html-to-image@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/node-html-to-image/-/node-html-to-image-3.0.1.tgz#0a20ee36e5d4f59256e35a970b580968c9b9133a"
+  integrity sha512-krVIKl7WQT5dRAFYShBiRqe1YY1W3cMPEbuy0WBN8grpVDbieAY8aArJnMBYSO87MGU3OhatZ+ZojrQ/F+V1ag==
   dependencies:
     handlebars "^4.5.3"
     puppeteer "3.0.0"
