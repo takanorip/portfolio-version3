@@ -845,6 +845,13 @@ summary {
     background-color: var(--color-code-gray);
     color: var(--color-code-black);
   }
+
+  @media (max-width: 640px) {
+    .takanorip-blogBase .takanorip-nav {
+      background-color: var(--color-blog-black);
+      border-top: 2px solid var(--color-blog-gray);
+    }
+  }
 }
 
 /* Algolia Search UI */
