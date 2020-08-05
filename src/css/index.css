@@ -190,7 +190,7 @@ summary {
   padding-bottom: var(--spacing-13);
 }
 
-.takanorip-blogBase .takanorip-contents a {
+.takanorip-blogBase .takanorip-contents a:hover {
   text-decoration: underline;
 }
 
