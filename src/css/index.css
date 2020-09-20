@@ -692,6 +692,11 @@ summary {
 
 .takanorip-twitter {
   margin-top: var(--spacing-8);
+  font-weight: bold;
+}
+
+.bmc-btn-container {
+  margin-top: var(--spacing-2);
 }
 
 @media (max-width: 640px) {
