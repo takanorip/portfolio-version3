@@ -15,7 +15,8 @@
     "twitterCard": "summary_large_image"
   },
   "author": {
-    "name": "takanorip"
+    "name": "takanorip",
+    "url": "https://takanorip.com/"
   },
   "twitter": "https://twitter.com/takanoripe",
   "github": "https://github.com/takanorip"
