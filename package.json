@@ -24,7 +24,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-img": "^0.3.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@takanorip/markdown-it-table-of-contents": "^0.0.1",
     "algoliasearch": "^4.5.1",
     "date-fns": "^2.15.0",
