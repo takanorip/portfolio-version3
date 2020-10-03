@@ -22,8 +22,6 @@ In the case of one-side cooking, we steam the eggs with a little water to cook o
 
 両面焼けばこの問題は起きない。カリカリになった白身ととろっと半熟の黄身の両方を味わうことができる。しかし両面焼きは少し難しい。油断すると黄身の膜が破れて溢れてしまうからだ。両面焼きの目玉焼きを作る際のポイントは次のとおりだ。
 
-if you cooked both sides, you won't have this problem. You can taste both the crispy white meat and the melted, half-ripe yolk. However, cooking on both side is a little more difficult. If you are not careful, the yolk film will break and the yolk will overflow. The following is the key to make a double-side fried egg.
-
 - 油は多めに敷く。
 - 強めの中火か強火でやる。外側だけ一気に火を通す。
 - 必ずフライパンを温めてから卵を入れる。フライパンが冷えてると最悪。
@@ -31,6 +29,8 @@ if you cooked both sides, you won't have this problem. You can taste both the cr
 - 片面に焼き色がついたら、フライ返しでひっくり返す。このとき勢いよく返しすぎると黄身が割れてしまうので、ゆっくりかつスムーズに返すのを意識する。
 - 返したらしばらくそっとしておく。黄身の周りに火が通るまで我慢。
 - フライパンを軽く揺すって卵が動くようになったら再び引っくり返して出来上がり。
+
+if you cooked both sides, you won't have this problem. You can taste both the crispy white meat and the melted, half-ripe yolk. However, cooking on both side is a little more difficult. If you are not careful, the yolk film will break and the yolk will overflow. The following is the key to make a double-side fried egg.
 
 - Put more oil in a frypan.
 - Cook the eggs high-medium or high heat. Only the outside should be cooked all at once.
