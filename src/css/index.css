@@ -1,7 +1,7 @@
 :root {
   --content-max-width: 960px;
   --content-width: calc(100% - 32px);
-  --medium-font-family: "FuturaLTPro-Heavy", "Hiragino Sans", sans-serif;
+  --medium-font-family: "FuturaLTPro-Book", "Hiragino Sans", sans-serif;
   --bold-font-family: "FuturaLTPro-Bold", 'Overpass', 'Noto Sans JP', "Hiragino Sans", sans-serif;
   --blog-font-family: 'M PLUS Rounded 1c', "Hiragino Sans", sans-serif;
   --code-font-family: 'Overpass Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -73,7 +73,7 @@ h1, h2, h3, p, a, ul, ol, li {
 }
 
 p, a, li, dd, dt {
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 ul, ol {
@@ -178,7 +178,6 @@ summary {
   max-width: var(--content-max-width);
   width: var(--content-width);
   margin: 0 auto;
-  font-size: var(--body-small-font-size);
 }
 
 .takanorip-blogBase .takanorip-contents {
