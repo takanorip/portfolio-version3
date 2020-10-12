@@ -21,6 +21,7 @@
   --spacing-13: 6.5rem;
   --spacing-21: 10.5rem;
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --color-link: #005f98;
   --color-primary1: #009EFD;
   --color-primary2: #2AF598;
   --color-blog-black: #161016;
@@ -223,6 +224,10 @@ summary {
   counter-increment: list;
   content: counter(list)'.';
   margin-right: var(--spacing-1);
+}
+
+.takanorip-blogBoby a {
+  color: var(--color-link);
 }
 
 .takanorip-headSection {
