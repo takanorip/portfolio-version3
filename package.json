@@ -35,6 +35,6 @@
     "remove-markdown": "^0.3.0"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.3"
   }
 }
