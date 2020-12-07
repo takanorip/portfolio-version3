@@ -26,7 +26,7 @@
     "@11ty/eleventy-img": "^0.3.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@takanorip/markdown-it-table-of-contents": "^0.0.1",
-    "algoliasearch": "^4.5.1",
+    "algoliasearch": "^4.8.3",
     "date-fns": "^2.16.1",
     "markdown-it-anchor": "^6.0.0",
     "markdown-it-for-inline": "^0.1.1",
