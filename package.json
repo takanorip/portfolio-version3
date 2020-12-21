@@ -23,7 +23,7 @@
   "homepage": "https://github.com/takanorip/portfolio-version3#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-img": "^0.3.0",
+    "@11ty/eleventy-img": "^0.5.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@takanorip/markdown-it-table-of-contents": "^0.0.1",
     "algoliasearch": "^4.5.1",
