@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   const iterator = require("markdown-it-for-inline");
   const format = require("date-fns/format");
   const removeMd = require("remove-markdown");
+  const eleventyGoogleFonts = require("eleventy-google-fonts");
 
   const markdownLib = markdownIt({
     html: true,
@@ -42,6 +43,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/**/*.png");
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(eleventyGoogleFonts);
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addNunjucksFilter("dateFormat", (value) => {
     return value instanceof Date ? format(value, "yyyy-MM-dd") : "";
