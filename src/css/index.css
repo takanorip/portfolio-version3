@@ -671,7 +671,8 @@ summary {
 .takanorip-blogFooter {
   width: var(--content-width);
   max-width: var(--content-max-width);
-  margin: 0 auto var(--spacing-13);
+  margin: auto;
+  padding-bottom: var(--spacing-13);
 }
 
 .takanorip-blogFooter a {
