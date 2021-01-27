@@ -1,6 +1,7 @@
 :root {
-  --content-max-width: 960px;
+  --content-max-width: 1140px;
   --content-width: calc(100% - 32px);
+  --text-max-width: 720px;
   --medium-font-family: "FuturaLTPro-Book", "Hiragino Sans", sans-serif;
   --bold-font-family: "FuturaLTPro-Bold", 'Overpass', 'Noto Sans JP', "Hiragino Sans", sans-serif;
   --blog-font-family: 'Noto Sans JP', "Hiragino Sans", sans-serif;
@@ -75,6 +76,7 @@ h1, h2, h3, p, a, ul, ol, li {
 
 p, a, li, dd, dt {
   line-height: 1.8;
+  max-width: var(--text-max-width);
 }
 
 ul, ol {
