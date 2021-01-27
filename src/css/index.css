@@ -196,10 +196,6 @@ summary {
   text-decoration: underline;
 }
 
-.takanorip-blogBoby {
-  max-width: 720px;
-}
-
 .takanorip-blogBoby ul,
 .takanorip-blogBoby ol {
   margin-left: var(--spacing-2);
