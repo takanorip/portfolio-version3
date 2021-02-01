@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   const format = require("date-fns/format");
   const removeMd = require("remove-markdown");
   const eleventyGoogleFonts = require("eleventy-google-fonts");
+  const embedTwitter = require("eleventy-plugin-embed-twitter");
 
   const markdownLib = markdownIt({
     html: true,
@@ -17,6 +18,7 @@ module.exports = function (eleventyConfig) {
   .use(markdownItAnchor)
   .use(markdownItTableOfContents, {
     includeLevel: [1, 2, 3],
+    containerTag: 'details',
     containerHeaderHtml:
       '<summary class="toc-container-header">TOC</summary>',
   })
@@ -44,6 +46,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyGoogleFonts);
+  eleventyConfig.addPlugin(embedTwitter, {
+    cacheText: true,
+  });
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addNunjucksFilter("dateFormat", (value) => {
     return value instanceof Date ? format(value, "yyyy-MM-dd") : "";

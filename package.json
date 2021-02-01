@@ -24,13 +24,13 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
-    "@takanorip/markdown-it-table-of-contents": "^0.0.1",
+    "@takanorip/markdown-it-table-of-contents": "^0.5.2",
     "algoliasearch": "^4.8.4",
     "date-fns": "^2.16.1",
     "eleventy-google-fonts": "^0.0.5",
-    "markdown-it-anchor": "^7.0.0",
+    "eleventy-plugin-embed-twitter": "^1.1.0",
+    "markdown-it-anchor": "^7.0.1",
     "markdown-it-for-inline": "^0.1.1",
-    "markdown-it-table-of-contents": "^0.5.1",
     "node-html-to-image": "^3.1.0",
     "remove-markdown": "^0.3.0"
   },
