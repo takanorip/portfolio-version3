@@ -1507,16 +1507,16 @@ eleventy-google-fonts@^0.0.5:
   resolved "https://registry.yarnpkg.com/eleventy-google-fonts/-/eleventy-google-fonts-0.0.5.tgz#9f46948e8e32661a1c28de0852886c7b8bc14c3e"
   integrity sha512-zeAtLoLkV3BTYcfLc74K/5eDv3IgKmiTO1+tnktlqgx5DQzyxjvrXVjCDaJpZUv0p6a1gxwpwSyqxCodJ7/uMQ==
 
-eleventy-plugin-embed-twitter@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitter/-/eleventy-plugin-embed-twitter-1.1.0.tgz#5ed871a6d7060da7a71978358b8fc784c662e39c"
-  integrity sha512-JwK1qH5kdS0nwS0qDISg3GLfwIoXuvlr3ZnXtaVWLPwdI6LOglXLPRFi+P9LO1qiPksguwKrhEawupOO/ywrUQ==
+eleventy-plugin-embed-twitter@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitter/-/eleventy-plugin-embed-twitter-1.2.0.tgz#0cfc3d100eab449c49c0c20207e8d87ea39a7a92"
+  integrity sha512-5vuOF1LFFZfj5DiL4oIo1+G8H4lLwzPwhXxeAeG+oWh2AkYrccfw3bydmOEQh+eFQKCF3Gtss9zmvccPMWiVjQ==
   dependencies:
     bent "^7.3.12"
     codecov "^3.8.1"
     deepmerge "^4.2.2"
     nyc "^15.1.0"
-    parse-path "^4.0.2"
+    parse-path "^4.0.3"
 
 emitter-mixin@0.0.3:
   version "0.0.3"
@@ -3048,7 +3048,7 @@ parse-ms@^0.1.0:
   resolved "https://registry.yarnpkg.com/parse-ms/-/parse-ms-0.1.2.tgz#dd3fa25ed6c2efc7bdde12ad9b46c163aa29224e"
   integrity sha1-3T+iXtbC78e93hKtm0bBY6opIk4=
 
-parse-path@^4.0.2:
+parse-path@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/parse-path/-/parse-path-4.0.3.tgz#82d81ec3e071dcc4ab49aa9f2c9c0b8966bb22bf"
   integrity sha512-9Cepbp2asKnWTJ9x2kpw6Fe8y9JDbqwahGCTvklzd/cEq5C5JC59x2Xb0Kx+x0QZ8bvNquGO8/BWP0cwBHzSAA==
