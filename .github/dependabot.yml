@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: date-fns
+    versions:
+    - 2.17.0
+    - 2.19.0
+    - 2.20.2
+  - dependency-name: eleventy-plugin-embed-twitter
+    versions:
+    - 1.2.0
+  - dependency-name: algoliasearch
+    versions:
+    - 4.8.6
