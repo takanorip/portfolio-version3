@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@11ty/dependency-tree/-/dependency-tree-1.0.0.tgz#b1fa53da49aafe0ab3fe38bc6b6058b704aa59a1"
   integrity sha512-2FWYlkphQ/83MG7b9qqBJfJJ0K9zupNz/6n4EdDuNLw6hQHGp4Sp4UMDRyBvA/xCTYDBaPSuSjHuu45tSujegg==
 
-"@11ty/eleventy-cache-assets@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-cache-assets/-/eleventy-cache-assets-2.1.0.tgz#85a99296fea8f7b5807e0ed7af2adf8c66a4892c"
-  integrity sha512-QZPSvK3yOZlPUQvTxzRYH6hv2S/jz8Pac2NLKQ/BPg16Siba6ujXP0ApToPGZftyDyFa0dZVZxhWcX4ino4KSg==
+"@11ty/eleventy-cache-assets@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-cache-assets/-/eleventy-cache-assets-2.3.0.tgz#6a81c5df822d42ca2268aa6e2374b272297ffe46"
+  integrity sha512-W8tvO00GlWaKt3ccpEStaUBoj9BE3EgzuD8uYChCfYbN2Q4HkEItkiapvIJT0zJwAwoMfnSq6VHPLScYlX2XCg==
   dependencies:
     debug "^4.3.1"
     flat-cache "^3.0.4"
@@ -985,12 +985,12 @@ eleventy-google-fonts@^0.0.5:
   resolved "https://registry.yarnpkg.com/eleventy-google-fonts/-/eleventy-google-fonts-0.0.5.tgz#9f46948e8e32661a1c28de0852886c7b8bc14c3e"
   integrity sha512-zeAtLoLkV3BTYcfLc74K/5eDv3IgKmiTO1+tnktlqgx5DQzyxjvrXVjCDaJpZUv0p6a1gxwpwSyqxCodJ7/uMQ==
 
-eleventy-plugin-embed-twitter@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitter/-/eleventy-plugin-embed-twitter-1.3.0.tgz#e00448e128e7d3716c40c4e238f7fe5641d87b67"
-  integrity sha512-UH0DZlf71LS4cghqjGGXtWMLw8wL3dUlr1W/pDyUU9RXGnChEv6ScaEhOeTlbDtuGS3u+vUrTPN/zGWLYQJ16A==
+eleventy-plugin-embed-twitter@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitter/-/eleventy-plugin-embed-twitter-1.3.2.tgz#cd939a209cf7f98856cb210054b70973f525cd9c"
+  integrity sha512-PJmA2MtakbXeFpM+3Rwl1UsGwbdYx3f6iIWoW0URzaM5hWyXMvjKg73idN1sRNZN96gHwLzfg6Bhg8LSyIJeOQ==
   dependencies:
-    "@11ty/eleventy-cache-assets" "^2.1.0"
+    "@11ty/eleventy-cache-assets" "^2.3.0"
     deepmerge "^4.2.2"
 
 emitter-mixin@0.0.3:
