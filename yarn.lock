@@ -987,10 +987,10 @@ eleventy-google-fonts@^0.1.0:
   resolved "https://registry.yarnpkg.com/eleventy-google-fonts/-/eleventy-google-fonts-0.1.0.tgz#adf5f2d91d647b1c1feb2343e940fbb741b29b82"
   integrity sha512-icaJjAPEvGMFvbdogLt+gZXor8JQRh6+ZA9v1yxx/fZ2/d+XPYDZIG1HYmvSqScN4AMx3f1Vq+RQ6iE8my6p8Q==
 
-eleventy-plugin-embed-twitter@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitter/-/eleventy-plugin-embed-twitter-1.3.2.tgz#cd939a209cf7f98856cb210054b70973f525cd9c"
-  integrity sha512-PJmA2MtakbXeFpM+3Rwl1UsGwbdYx3f6iIWoW0URzaM5hWyXMvjKg73idN1sRNZN96gHwLzfg6Bhg8LSyIJeOQ==
+eleventy-plugin-embed-twitter@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitter/-/eleventy-plugin-embed-twitter-1.3.3.tgz#0898a5d1229e7b257f54b039a654935a99023d2c"
+  integrity sha512-5b/vt3pRUdt+VD5WaaA6MR04NyOGRr/Z9eaG6lPAAINWlT0wWykjgncnPagyMbEcaU34dBvS5EM2YWAXmezOqw==
   dependencies:
     "@11ty/eleventy-cache-assets" "^2.3.0"
     deepmerge "^4.2.2"
