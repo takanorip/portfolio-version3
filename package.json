@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/takanorip/portfolio-version3#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@takanorip/markdown-it-table-of-contents": "^0.5.2",
     "algoliasearch": "^4.10.5",
